@@ -1,0 +1,12 @@
+.git
+.venv
+.venv-*
+frontend/node_modules
+frontend/dist
+data/raw
+checkpoints
+release
+docs/media
+*.db
+*.log
+.env

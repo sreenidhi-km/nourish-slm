@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: foodslm_db
+    environment:
+      POSTGRES_USER: fooduser
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-foodpass}
+      POSTGRES_DB: foodslmdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fooduser -d foodslmdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: .
+    container_name: foodslm_backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://fooduser:${POSTGRES_PASSWORD:-foodpass}@postgres:5432/foodslmdb
+      SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in your .env file}
+      PROCESSED_CSV_PATH: /app/data/processed/foodcom_cleaned.csv
+      BASE_MODEL_NAME: Qwen/Qwen3-4B
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:

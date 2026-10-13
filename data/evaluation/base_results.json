@@ -1,0 +1,38 @@
+[
+  {
+    "prompt": "Give me an Italian pasta recipe",
+    "requested_preference": "vegan",
+    "requested_cuisine": "Italian",
+    "recipe_title": "Italian Vegan Italian pasta",
+    "diet_type": "vegan",
+    "json_parsed": true,
+    "dietary_passed": true
+  },
+  {
+    "prompt": "I have chicken, rice and onions",
+    "requested_preference": "non_vegetarian",
+    "requested_cuisine": "All",
+    "recipe_title": "Chicken Curry",
+    "diet_type": "non_vegetarian",
+    "json_parsed": true,
+    "dietary_passed": true
+  },
+  {
+    "prompt": "I have potatoes, onions and tomatoes",
+    "requested_preference": "vegan",
+    "requested_cuisine": "All",
+    "recipe_title": "Yankee Bean Soup",
+    "diet_type": "vegan",
+    "json_parsed": true,
+    "dietary_passed": true
+  },
+  {
+    "prompt": "Give me a vegan paneer butter masala alternative",
+    "requested_preference": "vegan",
+    "requested_cuisine": "All",
+    "recipe_title": "Chana Pindi (indian Chickpeas Masala)",
+    "diet_type": "vegan",
+    "json_parsed": true,
+    "dietary_passed": true
+  }
+]

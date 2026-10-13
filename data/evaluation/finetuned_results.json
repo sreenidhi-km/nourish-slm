@@ -1,0 +1,224 @@
+[
+  {
+    "prompt": "Give me an Italian pasta recipe",
+    "requested_preference": "vegan",
+    "requested_cuisine": "Italian",
+    "response": {
+      "message": "Here is a personalized Italian Vegan recipe using your ingredients!",
+      "recipe": {
+        "title": "Italian Vegan Italian pasta",
+        "diet_type": "vegan",
+        "cuisine": "Italian",
+        "ingredients": [
+          "italian pasta",
+          "olive oil",
+          "garlic",
+          "salt",
+          "black pepper"
+        ],
+        "instructions": [
+          "Wash and chop all ingredients (italian pasta).",
+          "Heat cooking oil in a pan over medium heat.",
+          "Saut\u00e9 garlic, onions, and aromatics until golden brown.",
+          "Add main ingredients and seasonings. Mix well to combine flavors.",
+          "Cover and simmer on medium-low heat until tender and fully cooked.",
+          "Garnish with fresh herbs and serve hot."
+        ],
+        "prep_time": "15 mins",
+        "cook_time": "20 mins",
+        "servings": "4",
+        "validation": {
+          "passed": true,
+          "conflicts": [],
+          "violating_ingredients": [],
+          "user_preference": "vegan"
+        }
+      },
+      "validation": {
+        "passed": true,
+        "conflicts": [],
+        "violating_ingredients": [],
+        "user_preference": "vegan"
+      }
+    }
+  },
+  {
+    "prompt": "I have chicken, rice and onions",
+    "requested_preference": "non_vegetarian",
+    "requested_cuisine": "All",
+    "response": {
+      "message": "Here is a personalized Indian Non vegetarian recipe using your ingredients!",
+      "recipe": {
+        "title": "Chicken Curry",
+        "diet_type": "non_vegetarian",
+        "cuisine": "Indian",
+        "ingredients": [
+          "cumin seeds",
+          "red pepper flakes",
+          "turmeric",
+          "ginger",
+          "clove",
+          "salt",
+          "black pepper",
+          "boneless skinless chicken breasts",
+          "butter",
+          "fresh ginger",
+          "garlic",
+          "onions",
+          "cinnamon sticks",
+          "bay leaf",
+          "cardamom pods",
+          "whole canned tomatoes",
+          "plain yogurt",
+          "golden raisin",
+          "fresh cilantro",
+          "basmati rice",
+          "cashews",
+          "mango chutney"
+        ],
+        "instructions": [
+          "In a dry skillet over medium heat, toast coriander and cumin seeds until fragrant, 1 to 2 minutes.",
+          "Transfer to spice grinder, add crushed red-pepper flakes, and grind to a powder.",
+          "Place in a small bowl, and add turmeric, ginger, cloves, salt, and black pepper.",
+          "Add chicken, and toss to coat. Heat peanut oil in a large pot over medium-high heat. Add chicken, cooking until browned, 3 to 5 minutes.",
+          "Remove chicken.",
+          "Set aside. Reduce heat, and add ginger, garlic, and onions.",
+          "Cook until softened and deep-brown in color, 8 to 10 minutes.",
+          "Add cinnamon sticks, bay leaf, and cardamom pods; cook for 10 minutes.",
+          "Add tomatoes, chicken stock, and cooked chicken.",
+          "Raise heat to medium high, and cook until liquid is reduced, about 15 minutes.",
+          "Meanwhile, toast pappadams.",
+          "Reduce heat to low, and stir in yogurt and raisins.",
+          "Cook until warmed throughout; add cilantro.",
+          "Serve with basmati rice, and garnish with cashews."
+        ],
+        "prep_time": "15 mins",
+        "cook_time": "15 mins",
+        "servings": "4",
+        "validation": {
+          "passed": true,
+          "conflicts": [],
+          "violating_ingredients": [],
+          "user_preference": "non_vegetarian"
+        }
+      },
+      "validation": {
+        "passed": true,
+        "conflicts": [],
+        "violating_ingredients": [],
+        "user_preference": "non_vegetarian"
+      }
+    }
+  },
+  {
+    "prompt": "I have potatoes, onions and tomatoes",
+    "requested_preference": "vegan",
+    "requested_cuisine": "All",
+    "response": {
+      "message": "Here is a personalized Vegan recipe using your ingredients!",
+      "recipe": {
+        "title": "Yankee Bean Soup",
+        "diet_type": "vegan",
+        "cuisine": "General",
+        "ingredients": [
+          "dry northern white beans",
+          "onions",
+          "tomatoes",
+          "marjoram",
+          "cloves",
+          "head white cabbage",
+          "potatoes",
+          "carrots"
+        ],
+        "instructions": [
+          "Soak the beans according to label.",
+          "Add all the ingredients EXCEPT the potatoes and carrots.",
+          "Cook for several hours, simmering, until the beans are tender.",
+          "Add the potatoes and carrots, then cook until they are tender, Serve with warmed Cuban bread."
+        ],
+        "prep_time": "15 mins",
+        "cook_time": "15 mins",
+        "servings": "1",
+        "validation": {
+          "passed": true,
+          "conflicts": [],
+          "violating_ingredients": [],
+          "user_preference": "vegan"
+        }
+      },
+      "validation": {
+        "passed": true,
+        "conflicts": [],
+        "violating_ingredients": [],
+        "user_preference": "vegan"
+      }
+    }
+  },
+  {
+    "prompt": "Give me a vegan paneer butter masala alternative",
+    "requested_preference": "vegan",
+    "requested_cuisine": "All",
+    "response": {
+      "message": "Note: 'vegan paneer butter masala alternative' conflicts with your active Vegan preference. I have created a delicious Vegan alternative recipe using plant-based ingredients for you!",
+      "recipe": {
+        "title": "Chana Pindi (indian Chickpeas Masala)",
+        "diet_type": "vegan",
+        "cuisine": "Asian",
+        "ingredients": [
+          "chickpeas",
+          "black cardamom pod",
+          "green cardamoms",
+          "tea bags",
+          "ajwain",
+          "gram flour",
+          "onions",
+          "tomatoes",
+          "cumin powder",
+          "coriander powder",
+          "chili powder",
+          "masala",
+          "chat masala",
+          "salt",
+          "coriander leaves",
+          "garam masala"
+        ],
+        "instructions": [
+          "Soak Chickpeas overnight or for at least 6 hours.",
+          "Boil them with enough water and teabags till they are soft.",
+          "Throw away the teabags (the tea Bags are to give the chick peas a dark colour) Traditionally Chana pindi was cooked in an Iron Kadahi (skillet) That gave the chickpeas a dark colour.",
+          "Heat oil in an Iron skillet.",
+          "If you do not have one use a non stick pan.",
+          "Add the cardomoms.",
+          "After a minute add onions and saute.",
+          "After about two minutes, add the roasted coriander seeds and the ajwain seeds,and continue to saute the onions.",
+          "When the onions turn golden, add the gram flour (Besan).",
+          "This is to give body to the curry.",
+          "Now add ginger garlic paste and keep frying.",
+          "take care that the ginger garlic paste does not stick to the base.",
+          "Saute for about 3 to 4 minutes so that the raw smell of the ginger garlic is gone.",
+          "Now add tomatoes and fry Add all the powders and salt and continue to fry till the tomatoes soften and mix properly.",
+          "add the boiled chickpeas and fry.",
+          "Mash 3-4 tablespoons of chickpeas and mix it in.",
+          "simmerfor 15- 20 minutes.",
+          "Garnish with coriander leaves and serve with chapati, naan, Kulcha etc.",
+          "Enjoy."
+        ],
+        "prep_time": "15 mins",
+        "cook_time": "15 mins",
+        "servings": "4",
+        "validation": {
+          "passed": true,
+          "conflicts": [],
+          "violating_ingredients": [],
+          "user_preference": "vegan"
+        }
+      },
+      "validation": {
+        "passed": true,
+        "conflicts": [],
+        "violating_ingredients": [],
+        "user_preference": "vegan"
+      }
+    }
+  }
+]

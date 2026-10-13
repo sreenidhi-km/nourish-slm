@@ -1,0 +1,56 @@
+{
+  "device": "mps",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "adapter": "model/checkpoints/final_adapter",
+  "peft_active": true,
+  "standalone_generation": {
+    "gen_stats": {
+      "average": 5275.36,
+      "median": 5377.32,
+      "min": 4509.38,
+      "max": 6023.43
+    },
+    "out_tok_stats": {
+      "average": 138.7,
+      "median": 138.5,
+      "min": 122,
+      "max": 150
+    },
+    "tps_stats": {
+      "average": 26.34,
+      "median": 26.92,
+      "min": 23.48,
+      "max": 27.25
+    }
+  },
+  "retrieval": {
+    "average": 287.31,
+    "median": 52.61,
+    "min": 31.33,
+    "max": 2108.83
+  },
+  "generation": {
+    "average": 5176.65,
+    "median": 5208.27,
+    "min": 4017.87,
+    "max": 6043.48
+  },
+  "validation": {
+    "average": 0.09,
+    "median": 0.09,
+    "min": 0.0,
+    "max": 0.19
+  },
+  "end_to_end": {
+    "average": 5465.86,
+    "median": 5382.67,
+    "min": 4488.91,
+    "max": 6129.26
+  },
+  "tokens_per_second": {
+    "average": 25.46,
+    "median": 25.44,
+    "min": 23.79,
+    "max": 26.63
+  }
+}

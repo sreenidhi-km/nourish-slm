@@ -1,0 +1,6 @@
+/* index.css — Vite entry CSS. Main design system is in styles/global.css */
+/* This file intentionally minimal to avoid conflicts with global.css */
+
+body {
+  margin: 0;
+}

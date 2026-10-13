@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+venv/
+.pytest_cache/
+
+# Local config, databases and logs
+.env
+*.db
+*.log
+.DS_Store
+
+# Large assets - fetched by scripts/download_assets.sh
+data/raw/
+data/processed/
+data/training/
+models/**/adapter_model.safetensors
+models/**/training_args.bin
+checkpoints/
+release/
+
+# Frontend build output
+frontend/node_modules/
+frontend/dist/

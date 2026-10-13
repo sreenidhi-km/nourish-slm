@@ -1,0 +1,3 @@
+,Base Qwen3-4B,Fine-tuned (LoRA)
+test loss,2.895,1.106
+perplexity,18.075,3.022

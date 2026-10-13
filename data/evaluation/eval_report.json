@@ -1,0 +1,711 @@
+{
+  "summary": {
+    "total_test_cases": 50,
+    "validator_passed": 50,
+    "dietary_conflicts_count": 0,
+    "validator_pass_percentage": 100.0,
+    "average_latency_ms": 0.07,
+    "evaluation_duration_seconds": 0.0,
+    "breakdown": {
+      "vegan_tests": 15,
+      "vegetarian_tests": 15,
+      "eggitarian_tests": 10,
+      "non_vegetarian_tests": 10
+    }
+  },
+  "details": [
+    {
+      "test_id": 1,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "potato",
+        "tomato",
+        "onion"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 1.35
+    },
+    {
+      "test_id": 2,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "rice",
+        "black beans",
+        "avocado",
+        "lime"
+      ],
+      "cuisine": "Mexican",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.07
+    },
+    {
+      "test_id": 3,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "pasta",
+        "garlic",
+        "olive oil",
+        "basil"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 4,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "tofu",
+        "broccoli",
+        "soy sauce",
+        "ginger"
+      ],
+      "cuisine": "Chinese",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 5,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "chickpeas",
+        "tahini",
+        "lemon",
+        "garlic"
+      ],
+      "cuisine": "Middle Eastern",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 6,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "spinach",
+        "lentils",
+        "cumin",
+        "turmeric"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 7,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "quinoa",
+        "cucumber",
+        "cherry tomatoes",
+        "olive oil"
+      ],
+      "cuisine": "Mediterranean",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.07
+    },
+    {
+      "test_id": 8,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "sweet potato",
+        "black beans",
+        "corn"
+      ],
+      "cuisine": "Mexican",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 9,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "oats",
+        "banana",
+        "almond milk",
+        "cinnamon"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 10,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "eggplant",
+        "zucchini",
+        "bell pepper",
+        "tomato sauce"
+      ],
+      "cuisine": "French",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.07
+    },
+    {
+      "test_id": 11,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "cauliflower",
+        "coconut milk",
+        "curry powder"
+      ],
+      "cuisine": "Thai",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 12,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "mushrooms",
+        "garlic",
+        "thyme",
+        "olive oil"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 13,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "rice",
+        "edamame",
+        "carrots",
+        "sesame oil"
+      ],
+      "cuisine": "Japanese",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 14,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "cabbage",
+        "carrots",
+        "peas",
+        "mustard seeds"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.09
+    },
+    {
+      "test_id": 15,
+      "requested_preference": "vegan",
+      "ingredients": [
+        "pumpkin",
+        "vegetable broth",
+        "nutmeg"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 16,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "paneer",
+        "spinach",
+        "cream",
+        "garlic"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 17,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "pasta",
+        "heavy cream",
+        "parmesan",
+        "garlic"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 18,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "mozzarella",
+        "tomato",
+        "basil",
+        "balsamic"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 19,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "rice",
+        "yogurt",
+        "mustard seeds",
+        "curry leaves"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 20,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "tortilla",
+        "cheddar",
+        "black beans",
+        "sour cream"
+      ],
+      "cuisine": "Mexican",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.07
+    },
+    {
+      "test_id": 21,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "butter",
+        "paneer",
+        "tomato puree",
+        "kasuri methi"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 22,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "feta cheese",
+        "olives",
+        "cucumber",
+        "red onion"
+      ],
+      "cuisine": "Greek",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.07
+    },
+    {
+      "test_id": 23,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "ricotta",
+        "spinach",
+        "lasagna sheets",
+        "marinara"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 24,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "potato",
+        "butter",
+        "milk",
+        "chives"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 25,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "halloumi",
+        "mint",
+        "lemon",
+        "olive oil"
+      ],
+      "cuisine": "Mediterranean",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 26,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "cottage cheese",
+        "peaches",
+        "honey"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 27,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "sweet corn",
+        "butter",
+        "lime juice",
+        "cotija cheese"
+      ],
+      "cuisine": "Mexican",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.07
+    },
+    {
+      "test_id": 28,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "bread",
+        "cheddar cheese",
+        "butter"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.04
+    },
+    {
+      "test_id": 29,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "ghee",
+        "semolina",
+        "sugar",
+        "cardamom"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 30,
+      "requested_preference": "vegetarian",
+      "ingredients": [
+        "greek yogurt",
+        "honey",
+        "walnuts"
+      ],
+      "cuisine": "Greek",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 31,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "bread",
+        "butter",
+        "black pepper"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 32,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "rice",
+        "soy sauce",
+        "scallions"
+      ],
+      "cuisine": "Chinese",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 33,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "tomato",
+        "onion",
+        "green chilies"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 34,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "egg whites",
+        "spinach",
+        "feta cheese"
+      ],
+      "cuisine": "Mediterranean",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 35,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "potatoes",
+        "onion",
+        "olive oil"
+      ],
+      "cuisine": "Spanish",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 36,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "cream",
+        "nutmeg",
+        "pie crust"
+      ],
+      "cuisine": "French",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.05
+    },
+    {
+      "test_id": 37,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "tortilla",
+        "salsa",
+        "avocado"
+      ],
+      "cuisine": "Mexican",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 38,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "ramen noodles",
+        "green onion",
+        "sesame"
+      ],
+      "cuisine": "Japanese",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 39,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "bell pepper",
+        "onion",
+        "tomato"
+      ],
+      "cuisine": "Middle Eastern",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 40,
+      "requested_preference": "eggitarian",
+      "ingredients": [
+        "eggs",
+        "mayonnaise",
+        "mustard",
+        "paprika"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.06
+    },
+    {
+      "test_id": 41,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "chicken breast",
+        "rice",
+        "onion",
+        "spices"
+      ],
+      "cuisine": "Indian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 42,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "ground beef",
+        "taco shells",
+        "lettuce",
+        "cheese"
+      ],
+      "cuisine": "Mexican",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 43,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "salmon fillet",
+        "lemon",
+        "dill",
+        "butter"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 44,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "chicken thighs",
+        "soy sauce",
+        "mirin",
+        "sugar"
+      ],
+      "cuisine": "Japanese",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 45,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "shrimp",
+        "garlic",
+        "butter",
+        "white wine",
+        "parsley"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 46,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "pork chops",
+        "apples",
+        "rosemary",
+        "olive oil"
+      ],
+      "cuisine": "American",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 47,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "lamb",
+        "yogurt",
+        "garlic",
+        "pita bread"
+      ],
+      "cuisine": "Middle Eastern",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 48,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "bacon",
+        "eggs",
+        "spaghetti",
+        "parmesan"
+      ],
+      "cuisine": "Italian",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 49,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "duck breast",
+        "orange juice",
+        "honey",
+        "thyme"
+      ],
+      "cuisine": "French",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": 50,
+      "requested_preference": "non_vegetarian",
+      "ingredients": [
+        "cod fillet",
+        "potatoes",
+        "flour",
+        "tarter sauce"
+      ],
+      "cuisine": "British",
+      "passed": true,
+      "conflicts": [],
+      "latency_ms": 0.0
+    }
+  ]
+}
