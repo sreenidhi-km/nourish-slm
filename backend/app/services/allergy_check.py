@@ -29,6 +29,7 @@ SUBSTITUTES: Dict[str, List[Tuple[str, str]]] = {
     "tree_nuts": [
         (r"almond milk", ["oat milk", "rice milk"]), (r"almond (flour|meal)", ["oat flour", "rice flour"]), (r"cashew (cream|paste)", "sunflower seed paste"),
         (r"nutella", "sunflower seed butter"), (r"marzipan", "sunflower seed paste"),
+        (r"(almond|cashew|walnut|pecan|pistachio|hazelnut|macadamia|mixed nut|nut) (butter|spread)", "sunflower seed butter"),
         (r"(almonds?|cashews?|walnuts?|pecans?|pistachios?|hazelnuts?|macadamias?|brazil nuts?|pine nuts?)",
          "pumpkin seeds"),
     ],
@@ -36,8 +37,8 @@ SUBSTITUTES: Dict[str, List[Tuple[str, str]]] = {
         (r"(heavy |whipping |fresh |sour )?cream cheese", "dairy-free cream cheese"),
         (r"(heavy |whipping |fresh |sour )?cream", "coconut cream"), (r"buttermilk", "oat milk with lemon juice"),
         (r"(clarified butter|ghee)", "vegetable oil"), (r"butter", "vegetable oil"),
-        (r"(greek )?(yogh?urt|curd|dahi)", "coconut yogurt"), (r"paneer", ["firm tofu", "chickpeas"]),
-        (r"(parmesan|cheddar|mozzarella|ricotta|feta|cottage|swiss|goat)? ?cheese", ["dairy-free cheese", "nutritional yeast"]),
+        (r"(greek )?(yogh?urt|curd|dahi)", "coconut yogurt"), (r"paneer( cheese)?", ["firm tofu", "chickpeas"]),
+        (r"(?:(?:parmesan|cheddar|mozzarella|ricotta|feta|cottage|swiss|goat|cream) )?cheese", ["dairy-free cheese", "nutritional yeast"]),
         (r"(condensed|evaporated|whole|skim|low-fat)? ?milk", ["oat milk", "rice milk"]), (r"whey", "pea protein"),
     ],
     "egg": [
@@ -176,7 +177,10 @@ def apply_allergy_check(recipe: Dict[str, Any], allergies: Iterable[str]) -> Dic
     out["ingredients"] = ingredients
     out["instructions"] = _rewrite_steps(list(out.get("instructions") or []), swaps)
     if out.get("title") and swaps:
-        out["title"] = _rewrite_steps([out["title"]], swaps, title_case=True)[0]
+        title = out["title"]
+        words = [w for w in re.findall(r"[A-Za-z]+", title) if len(w) > 3]
+        is_title_case = bool(words) and sum(w[0].isupper() for w in words) >= len(words) / 2
+        out["title"] = _rewrite_steps([title], swaps, title_case=is_title_case)[0]
     out["allergy_check"] = {
         "checked": [ALLERGEN_LABELS.get(a, a) for a in allergies],
         "checked_keys": allergies,

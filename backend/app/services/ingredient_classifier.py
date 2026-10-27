@@ -36,7 +36,7 @@ def normalize_ingredient_name(name: str) -> str:
 # (e.g. "almond milk", "coconut cream", "peanut butter", "eggplant" is handled by word boundaries).
 PLANT_BASED_PHRASES = re.compile(
     r"\b(?:almond|soy|soya|oat|coconut|rice|cashew|hazelnut|hemp|pea|flax|plant[- ]based|vegan|non[- ]dairy|"
-    r"peanut|cocoa|cacao|shea|apple|nut|seed|sunflower|almond|tahini)\s+"
+    r"peanut|cocoa|cacao|shea|apple|nut|seeds?|sunflower|almond|tahini|pumpkin seed)\s+"
     r"(?:milk|cream|butter|yogh?urt|cheese|mayonnaise|mayo|egg)s?\b"
     r"|\bcream of tartar\b|\bcoconut\s+(?:milk|cream)\b|\bsoy milk\b",
     re.IGNORECASE,
