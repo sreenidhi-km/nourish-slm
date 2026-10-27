@@ -24,3 +24,6 @@ release/
 # Frontend build output
 frontend/node_modules/
 frontend/dist/
+tunnel.log
+vercel.log
+frontend/.vercel/

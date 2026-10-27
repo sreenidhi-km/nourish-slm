@@ -57,7 +57,12 @@ DAIRY_INGREDIENTS: Set[str] = {
     "mozzarella cheese", "parmesan cheese", "ricotta cheese", "cream cheese",
     "feta cheese", "goat cheese", "swiss cheese", "provolone", "monterey jack",
     "paneer", "yogurt", "greek yogurt", "curd", "whey", "buttermilk", 
-    "condensed milk", "evaporated milk", "condensed milk", "half and half"
+    "condensed milk", "evaporated milk", "condensed milk", "half and half",
+    # Cheeses and dairy foods named on their own ("100 g feta" was previously not recognised)
+    "feta", "parmesan", "parmigiano", "parmigiano-reggiano", "mozzarella", "bocconcini", "burrata", "ricotta",
+    "cheddar", "romano", "pecorino", "halloumi", "gouda", "brie", "camembert", "mascarpone", "gruyere",
+    "asiago", "gorgonzola", "blue cheese", "emmental", "havarti", "colby", "queso fresco", "cotija",
+    "khoya", "khoa", "mawa", "malai", "chhena", "kefir", "ice cream", "custard", "milk powder", "skyr",
 }
 
 # Derived collections for fast lookup
@@ -82,5 +87,19 @@ PLANT_BASED_ALTERNATIVES = {
     "honey": "maple syrup or agave nectar",
     "chicken": "tofu or jackfruit or mushrooms",
     "beef": "tempeh or textured vegetable protein",
-    "pork": "jackfruit or seitan"
+    "pork": "jackfruit or seitan",
+    # Added so every common animal ingredient has a swap (previously these were flagged but left in)
+    "mutton": "soya chunks or jackfruit", "lamb": "soya chunks or jackfruit", "goat": "soya chunks",
+    "turkey": "tofu", "duck": "mushrooms", "bacon": "smoked tempeh", "ham": "smoked tofu",
+    "sausage": "plant-based sausage", "pepperoni": "sun-dried tomatoes", "salami": "grilled vegetables",
+    "ground beef": "soya mince", "lard": "vegetable oil", "suet": "vegetable shortening", "gelatin": "agar agar",
+    "fish sauce": "soy sauce", "fish": "firm tofu", "salmon": "firm tofu", "tuna": "chickpeas", "cod": "firm tofu",
+    "tilapia": "firm tofu", "anchovies": "capers", "anchovy": "capers", "sardines": "chickpeas",
+    "prawns": "mushrooms", "prawn": "mushrooms", "shrimp": "mushrooms", "crab": "hearts of palm",
+    "lobster": "king oyster mushrooms", "squid": "mushrooms",
+    "clarified butter": "vegetable oil", "sour cream": "coconut yogurt", "cream cheese": "vegan cream cheese",
+    "curd": "coconut yogurt", "buttermilk": "oat milk with lemon juice", "whey": "pea protein",
 }
+
+# Not covered by the category lists above: blocked only for vegans
+VEGAN_EXTRA = {"honey": "maple syrup or agave nectar"}

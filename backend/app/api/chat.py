@@ -16,6 +16,8 @@ from backend.app.models.user import User
 from backend.app.models.chat import ChatSession, Message
 from backend.app.schemas.chat import ChatRequest, ChatResponse, ChatSessionSchema
 from backend.app.services.model_service import generate_recipe_response, validate_cuisine, validate_preference
+from backend.app.services.recipe_enrichment import small_talk_reply
+from backend.app.services.allergy_check import normalize_allergies
 
 router = APIRouter(prefix="/chat", tags=["Chat & SLM Recipe Generator"])
 
@@ -42,6 +44,15 @@ def post_chat_message(
     if pref != current_user.dietary_preference:
         current_user.dietary_preference = pref
         db.commit()
+
+    # Allergies: the request's list (if sent) becomes the user's saved list
+    if req.allergies is not None:
+        allergies = normalize_allergies(req.allergies)
+        if allergies != normalize_allergies(current_user.allergies or []):
+            current_user.allergies = allergies
+            db.commit()
+    else:
+        allergies = normalize_allergies(current_user.allergies or [])
 
     # 1. Get or Create ChatSession
     session = None
@@ -72,12 +83,20 @@ def post_chat_message(
     db.add(user_msg_db)
     db.commit()
 
+    # 3a. Short conversational messages (greetings, thanks, "what can you do") get a text reply
+    reply = small_talk_reply(req.message)
+    if reply:
+        db.add(Message(chat_id=session.id, role="assistant", content=reply, recipe_data=None))
+        db.commit()
+        return {"chat_id": session.id, "response_type": "text", "message": reply, "recipe": None, "validation": None}
+
     # 3. Generate SLM Recipe Response + Validation
     slm_result = generate_recipe_response(
         user_message=req.message,
         preference=pref,
         requested_cuisine=cuisine,
-        chat_id=session.id
+        chat_id=session.id,
+        allergies=allergies,
     )
 
     # 4. Store Assistant Message & Structured Recipe
@@ -105,15 +124,18 @@ def get_chat_history(db: Session = Depends(get_db), current_user: User = Depends
         ChatSession.user_id == current_user.id
     ).order_by(ChatSession.updated_at.desc()).all()
 
+    # One grouped count query instead of loading every message of every chat
+    from sqlalchemy import func
+    counts = dict(db.query(Message.chat_id, func.count(Message.id))
+                  .filter(Message.chat_id.in_([s.id for s in sessions])).group_by(Message.chat_id).all()) if sessions else {}
     output = []
     for s in sessions:
-        msgs = db.query(Message).filter(Message.chat_id == s.id).order_by(Message.created_at.asc()).all()
         output.append({
             "id": s.id,
             "title": s.title,
             "created_at": s.created_at.isoformat(),
             "updated_at": s.updated_at.isoformat(),
-            "messages_count": len(msgs)
+            "messages_count": counts.get(s.id, 0)
         })
     return output
 

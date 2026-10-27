@@ -23,6 +23,21 @@ engine = create_engine(
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
+def ensure_columns():
+    """Adds columns introduced after a database was first created (SQLite and PostgreSQL)."""
+    from sqlalchemy import inspect, text
+    wanted = {"users": {"allergies": "JSON" if not db_url.startswith("sqlite") else "TEXT"}}
+    insp = inspect(engine)
+    with engine.begin() as conn:
+        for table, cols in wanted.items():
+            if not insp.has_table(table):
+                continue
+            have = {c["name"] for c in insp.get_columns(table)}
+            for name, sql_type in cols.items():
+                if name not in have:
+                    conn.execute(text(f"ALTER TABLE {table} ADD COLUMN {name} {sql_type}"))
+
+
 def get_db():
     """FastAPI dependency yielding database session."""
     db = SessionLocal()

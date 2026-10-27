@@ -10,6 +10,8 @@ import sys
 import os
 import json
 import time
+import threading
+from contextlib import nullcontext
 import torch
 from typing import Dict, Any, List
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -138,6 +140,8 @@ class SLMInferenceEngine:
         self.is_adapter_loaded = False
         self.model_mode = "base"
         self.model_label = "Qwen3-4B · Base"
+        # One generation at a time: the recipe chat and the diet assistants share this model.
+        self._gen_lock = threading.RLock()
 
     def load_model(self):
         """Loads tokenizer and base model + LoRA adapter if present."""
@@ -209,7 +213,7 @@ class SLMInferenceEngine:
             torch.cuda.synchronize()
             
         t0 = time.perf_counter()
-        with torch.no_grad():
+        with self._gen_lock, torch.no_grad():
             outputs = self.model.generate(
                 **inputs,
                 max_new_tokens=max_new_tokens,
@@ -334,24 +338,29 @@ class SLMInferenceEngine:
         # If conflict detected, perform plant-based alternative substitution
         if not val_res["passed"]:
             import re as _re
-            replaced = {}
+            replaced = {}          # word(s) replaced -> alternative
             clean_ingredients = []
             for ing in recipe_ingredients:
-                alt = None
-                for conf in val_res["conflicts"]:
-                    if conf["ingredient"] == ing and conf.get("suggested_alternative"):
-                        alt = conf["suggested_alternative"]
-                        break
-                if alt:
-                    replaced[ing] = alt
-                    clean_ingredients.append(alt)
-                else:
+                conf = next((c for c in val_res["conflicts"] if c["ingredient"] == ing and c.get("suggested_alternative")), None)
+                if not conf:
                     clean_ingredients.append(ing)
+                    continue
+                alt, term = conf["suggested_alternative"], conf.get("matched_term")
+                term_pat = _re.compile(r"\b" + _re.escape(term) + r"(e?s)?\b", _re.IGNORECASE) if term else None
+                if term_pat and term_pat.search(ing):
+                    # "2 tbsp ghee" -> "2 tbsp vegetable oil or coconut oil" (keeps the quantity)
+                    clean_ingredients.append(term_pat.sub(alt, ing, count=1))
+                    replaced[term] = alt
+                else:
+                    clean_ingredients.append(alt)
+                    replaced[ing] = alt
             recipe_ingredients = clean_ingredients
-            # Keep the steps consistent with the substituted ingredient names
-            for orig, alt in replaced.items():
-                pat = _re.compile(r"\b" + _re.escape(orig) + r"\b", _re.IGNORECASE)
-                instructions = [pat.sub(alt, step) for step in instructions]
+            # Keep the steps consistent: replace the ingredient word wherever a step mentions it
+            # ("Heat the ghee" is rewritten even though the ingredient line was "2 tbsp ghee").
+            for orig in sorted(replaced, key=len, reverse=True):
+                pat = _re.compile(r"\b" + _re.escape(orig) + r"(e?s)?\b", _re.IGNORECASE)
+                instructions = [pat.sub(replaced[orig], step) for step in instructions]
+                title = pat.sub(replaced[orig].split(" or ")[0].title(), title)
             val_res = validate_recipe_against_preference(recipe_ingredients, pref_clean)
 
         return {
@@ -368,6 +377,33 @@ class SLMInferenceEngine:
             "generation_time_ms": gen_time_ms,
             "output_tokens": output_tokens
         }
+
+    def generate_chat(self, messages: List[Dict[str, str]], max_new_tokens: int = 220, use_adapter: bool = False):
+        """Short conversational reply (used by the plan-specific diet assistants).
+
+        Reuses the already-loaded model; the recipe LoRA adapter is temporarily disabled by default because it was
+        trained to write recipes, not to answer questions. Returns None when the model is not available.
+        """
+        if not SLM_GENERATE:
+            return None
+        if not self.is_loaded:
+            self.load_model()
+        if self.model is None or self.tokenizer is None:
+            return None
+        try:
+            prompt = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True,
+                                                        enable_thinking=False)
+        except TypeError:
+            prompt = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        ctx = nullcontext()
+        if self.is_adapter_loaded and not use_adapter and hasattr(self.model, "disable_adapter"):
+            ctx = self.model.disable_adapter()
+        with self._gen_lock:
+            with ctx:
+                res = self.generate_raw_tokens(prompt, max_new_tokens=max_new_tokens)
+        import re as _re
+        return _re.sub(r"<think>.*?</think>", "", res["response_text"], flags=_re.DOTALL).strip()
+
 
 slm_engine = SLMInferenceEngine()
 

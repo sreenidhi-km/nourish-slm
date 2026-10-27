@@ -23,7 +23,8 @@ PROJECT_ROOT = os.environ.get("PROJECT_ROOT") or os.path.abspath(
 class Settings:
     PROJECT_NAME: str = "Food SLM - AI Recipe Assistant"
     API_V1_STR: str = "/api"
-    SECRET_KEY: str = os.environ.get("SECRET_KEY", "nourish-slm-dev-secret-key-v1-persistent-2026")
+    # No fixed fallback key: the repository is public, so a key written here could be used to forge tokens.
+    SECRET_KEY: str = os.environ.get("SECRET_KEY") or secrets.token_urlsafe(48)
     SECRET_KEY_FROM_ENV: bool = bool(os.environ.get("SECRET_KEY"))
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
@@ -37,6 +38,9 @@ class Settings:
         if o.strip()
     ]
 
+    # Optional regex for extra allowed origins, e.g. Vercel deployments
+    CORS_ORIGIN_REGEX: str = os.environ.get("CORS_ORIGIN_REGEX", "") or None
+
     # Database URL: PostgreSQL or SQLite
     DATABASE_URL: str = os.environ.get(
         "DATABASE_URL", "sqlite:///" + os.path.join(PROJECT_ROOT, "food_slm.db")
@@ -44,6 +48,13 @@ class Settings:
     PROCESSED_CSV_PATH: str = os.environ.get(
         "PROCESSED_CSV_PATH",
         os.path.join(PROJECT_ROOT, "data", "processed", "foodcom_cleaned.csv"),
+    )
+    # Diet planning data (built by scripts/build_diet_dataset.py)
+    DIET_DB_PATH: str = os.environ.get(
+        "DIET_DB_PATH", os.path.join(PROJECT_ROOT, "data", "processed", "diet_recipes.db")
+    )
+    USDA_FOODS_PATH: str = os.environ.get(
+        "USDA_FOODS_PATH", os.path.join(PROJECT_ROOT, "data", "processed", "usda_foods.json")
     )
 
 

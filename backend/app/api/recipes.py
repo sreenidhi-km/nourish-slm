@@ -24,7 +24,8 @@ from backend.app.services.recipe_validator import validate_recipe_against_prefer
 router = APIRouter(prefix="", tags=["Recipes & Saved Items"])
 
 @router.post("/recipes/generate")
-def generate_recipe_direct(req: RecipeGenerateRequest):
+def generate_recipe_direct(req: RecipeGenerateRequest, current_user: User = Depends(get_current_user)):
+    # Requires sign-in: this runs the 4B model, so it must not be open to anonymous callers
     res = slm_engine.generate_recipe(
         ingredients=req.ingredients,
         preference=req.preference,
@@ -33,7 +34,7 @@ def generate_recipe_direct(req: RecipeGenerateRequest):
     return res
 
 @router.post("/recipes/validate")
-def validate_recipe_direct(req: RecipeValidateRequest):
+def validate_recipe_direct(req: RecipeValidateRequest, current_user: User = Depends(get_current_user)):
     res = validate_recipe_against_preference(
         ingredients=req.ingredients,
         user_preference=req.preference

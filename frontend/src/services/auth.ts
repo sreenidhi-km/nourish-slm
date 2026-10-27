@@ -46,6 +46,17 @@ export const authService = {
     return res.data;
   },
 
+  async updateAllergies(allergies: string[]): Promise<string[]> {
+    const res = await apiClient.put('/user/allergies', { allergies });
+    const storedUser = localStorage.getItem('food_slm_user');
+    if (storedUser) {
+      const u = JSON.parse(storedUser);
+      u.allergies = res.data.allergies;
+      localStorage.setItem('food_slm_user', JSON.stringify(u));
+    }
+    return res.data.allergies;
+  },
+
   getStoredUser(): User | null {
     const u = localStorage.getItem('food_slm_user');
     return u ? JSON.parse(u) : null;

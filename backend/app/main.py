@@ -9,11 +9,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.core.config import settings
-from backend.app.core.database import Base, engine
-from backend.app.api import auth, users, chat, recipes
+from backend.app.core.database import Base, engine, ensure_columns
+from backend.app.api import auth, users, chat, recipes, diet
 
 # Create database tables if they do not exist
 Base.metadata.create_all(bind=engine)
+ensure_columns()
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -28,6 +29,7 @@ if not settings.SECRET_KEY_FROM_ENV:
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=settings.CORS_ORIGIN_REGEX,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -38,6 +40,7 @@ app.include_router(auth.router, prefix=settings.API_V1_STR)
 app.include_router(users.router, prefix=settings.API_V1_STR)
 app.include_router(chat.router, prefix=settings.API_V1_STR)
 app.include_router(recipes.router, prefix=settings.API_V1_STR)
+app.include_router(diet.router, prefix=settings.API_V1_STR)
 
 @app.get("/health")
 def health_check():

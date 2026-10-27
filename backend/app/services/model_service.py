@@ -14,6 +14,8 @@ from model.inference import slm_engine
 from backend.app.services.retrieval_service import retrieval_service
 from backend.app.services.recipe_validator import validate_recipe_against_preference
 from backend.app.services.dietary_rules import DietaryPreference
+from backend.app.services.recipe_enrichment import enrich_recipe
+from backend.app.services.allergy_check import allergens_in_text, apply_allergy_check, normalize_allergies
 
 # Only expose these three cuisines in the entire pipeline
 ALLOWED_CUISINES = {"indian", "italian", "continental"}
@@ -66,10 +68,42 @@ def extract_ingredients_from_query(text: str) -> Tuple[List[str], str]:
         ]:
             extracted.append(word)
 
+    # "chickpeas onions tomatoes" (no commas): split a phrase into foods when every word is a known food
+    split = []
+    for word in extracted:
+        split.extend(_segment_foods(word))
+    extracted = list(dict.fromkeys(split))
+
     if not extracted:
         extracted = ["vegetables"]
 
     return extracted, detected_cuisine
+
+
+_DISH_WORDS = {"curry", "masala", "stew", "soup", "salad", "bowl", "fry", "stir", "sabzi", "sabji", "gravy", "bake",
+               "roast", "wrap", "sandwich", "pulao", "biryani", "dish", "meal", "tikka"}
+
+
+def _segment_foods(phrase: str) -> List[str]:
+    """Splits 'olive oil garlic pasta' into ['olive oil', 'garlic', 'pasta'] using known ingredient names
+    (longest match first). Phrases that are themselves one ingredient, or contain unknown words, stay whole."""
+    from backend.app.services.portion_estimator import is_known_food
+    words = phrase.split()
+    if len(words) < 2 or is_known_food(phrase):
+        return [phrase]
+    parts, i = [], 0
+    while i < len(words):
+        for j in range(len(words), i, -1):
+            cand = " ".join(words[i:j])
+            if is_known_food(cand):
+                parts.append(cand)
+                i = j
+                break
+        else:
+            if words[i] not in _DISH_WORDS:
+                return [phrase]       # an unknown word: keep the user's phrase as typed
+            i += 1
+    return parts if len(parts) > 1 else [phrase]
 
 
 def validate_cuisine(cuisine: str) -> str:
@@ -99,7 +133,8 @@ def generate_recipe_response(
     user_message: str,
     preference: str = "no_preference",
     requested_cuisine: str = "All",
-    chat_id: str = None
+    chat_id: str = None,
+    allergies: List[str] = None,
 ) -> Dict[str, Any]:
     """
     Full recipe processing pipeline.
@@ -156,6 +191,14 @@ def generate_recipe_response(
     elif not recipe_output.get("cuisine"):
         recipe_output["cuisine"] = "General"
 
+    # Allergy checkpoint: swap ingredients that contain the user's allergens, then re-check the diet
+    allergies = normalize_allergies(allergies or [])
+    if allergies:
+        recipe_output = apply_allergy_check(recipe_output, allergies)
+        recipe_output["validation"] = validate_recipe_against_preference(recipe_output["ingredients"], pref_clean)
+        ac = recipe_output["allergy_check"]
+        print(f"ALLERGY CHECK: {ac['checked']} passed={ac['passed']} swaps={len(ac['substitutions'])}")
+
     validation = recipe_output["validation"]
     print(f"VALIDATION RESULT: Passed = {validation['passed']}, Conflicts = {validation['conflicts']}")
 
@@ -171,6 +214,23 @@ def generate_recipe_response(
     else:
         cuisine_str = f" {recipe_output['cuisine']}" if recipe_output.get('cuisine') and recipe_output['cuisine'] not in ["General", "All"] else ""
         conversational_text = f"Here is your personalized{cuisine_str} {pref_label} recipe!"
+
+    if allergies:
+        typed = allergens_in_text(extracted_ings, allergies)
+        ac = recipe_output["allergy_check"]
+        if typed:
+            conversational_text += (f" Heads up: what you typed contains {', '.join(typed).lower()}, which is on your "
+                                    f"allergy list, so I replaced it.")
+        elif ac["substitutions"]:
+            conversational_text += f" I swapped {len(ac['substitutions'])} ingredient(s) to keep it free of your allergens."
+        if not ac["passed"]:
+            conversational_text += " Some ingredients could not be made allergen-free, so please check the warning on the card."
+
+    # Attach nutrition, a matching photo and dietary labels (shared nutrition engine)
+    recipe_output = enrich_recipe(recipe_output, retrieved_context, extracted_ings, pref_clean, target_cuisine,
+                                  allergies=allergies)
+    nut = recipe_output.get("nutrition") or {}
+    print(f"NUTRITION: status={nut.get('status')} values={nut.get('values')}")
 
     print("FINAL RESPONSE CREATED SUCCESSFULLY")
     print("=" * 60)

@@ -39,7 +39,13 @@ export const Register: React.FC<RegisterProps> = ({
       await authService.register(name.trim(), email.trim(), password);
       onSuccess();
     } catch (err: any) {
-      setError(err.response?.data?.detail || 'Registration failed. Please try again.');
+      if (!err?.response) {
+        // No HTTP response: the backend is down or still starting (e.g. loading the model)
+        setError('Cannot reach the Nourish server. It may still be starting up - please wait a moment and try again.');
+      } else {
+        const detail = err.response?.data?.detail;
+        setError(typeof detail === 'string' ? detail : 'Registration failed. Please try again.');
+      }
     } finally {
       setLoading(false);
     }

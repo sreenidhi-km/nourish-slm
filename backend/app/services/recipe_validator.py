@@ -6,10 +6,18 @@ Detects conflicts, lists violating ingredients, and suggests plant-based or allo
 """
 
 from typing import List, Dict, Any, Tuple
+import re
+
 from backend.app.services.dietary_rules import (
     DietaryPreference,
-    PLANT_BASED_ALTERNATIVES
+    PLANT_BASED_ALTERNATIVES,
+    VEGAN_EXTRA,
 )
+
+# Longest phrase first, whole words only ("cream cheese" before "cream"; "ham" never matches "graham")
+_ALT_PATTERNS = [(re.compile(r"\b" + re.escape(k) + r"(e?s)?\b"), k, v)
+                 for k, v in sorted(PLANT_BASED_ALTERNATIVES.items(), key=lambda kv: -len(kv[0]))]
+_VEGAN_EXTRA_PATTERNS = [(re.compile(r"\b" + re.escape(k) + r"\b"), k, v) for k, v in VEGAN_EXTRA.items()]
 from backend.app.services.ingredient_classifier import (
     classify_ingredient,
     normalize_ingredient_name
@@ -65,6 +73,8 @@ def validate_recipe_against_preference(
                 reason = "egg (violates Vegan)"
             elif cats["is_dairy"]:
                 reason = "dairy (violates Vegan)"
+            elif any(p.search(norm) for p, _, _ in _VEGAN_EXTRA_PATTERNS):
+                reason = "honey (violates Vegan)"
 
         elif pref_str == DietaryPreference.VEGETARIAN.value:
             if cats["is_meat"]:
@@ -90,15 +100,17 @@ def validate_recipe_against_preference(
 
         if reason:
             violating_ingredients.append(ing)
-            # Find substitution if available
-            for orig, sub in PLANT_BASED_ALTERNATIVES.items():
-                if orig in norm:
-                    alt = sub
+            # Find substitution if available (and which words in the ingredient it replaces)
+            matched = None
+            for pat, key, sub in _ALT_PATTERNS + _VEGAN_EXTRA_PATTERNS:
+                if pat.search(norm):
+                    alt, matched = sub, key
                     break
             conflicts.append({
                 "ingredient": ing,
                 "reason": reason,
-                "suggested_alternative": alt
+                "suggested_alternative": alt,
+                "matched_term": matched,
             })
 
     passed = (len(conflicts) == 0)

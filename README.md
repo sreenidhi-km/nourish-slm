@@ -11,9 +11,12 @@
 ## Highlights
 
 - **Fine-tuned open model:** Qwen3-4B with a LoRA adapter, trained on Food.com recipes. Runs on your own hardware, with no external LLM API.
-- **Diet-safe by design:** a deterministic validator checks every ingredient for Vegan, Vegetarian, Eggitarian and Non-vegetarian diets and swaps anything that breaks the rules (for example ghee to olive oil in a vegan dish).
+- **Diet-safe by design:** a deterministic validator checks every ingredient for Vegan, Vegetarian, Eggitarian and Non-vegetarian diets and swaps anything that breaks the rules (for example ghee to vegetable or coconut oil, honey to maple syrup in a vegan dish), keeping the quantity and rewriting the cooking steps to match.
+- **Allergy check:** pick allergies in the chat header (peanut, tree nuts, dairy, egg, gluten, soy, fish, shellfish, sesame, mustard). Every recipe is checked; ingredients that contain an allergen are swapped for a safe alternative (paneer to tofu, or to chickpeas if you are also allergic to soy), and the card shows exactly what was changed, or a clear warning if something could not be swapped.
+- **Nutrition on every recipe:** calories, protein, carbs, fat and fibre per serving on every chat recipe. Dataset recipes use their published values; model-written recipes (which list ingredients without amounts) get suggested amounts from the median quantity real Food.com recipes use, and an approximate USDA-based calculation clearly labelled as such.
 - **Never an empty answer:** if the model's output is unusable, the backend falls back to a retrieved dataset recipe, then to a template.
 - **Full product:** React chat UI with recipe cards, saved recipes, favorites, instant diet switching, and light and dark themes.
+- **Diet planning:** a Diet section with 24 plans (dietary preferences, fitness goals, 12 sports). It builds personalised daily meal plans from 46k real recipes with photos and published nutrition. Users can edit any meal or ingredient, and nutrition is recalculated with USDA FoodData Central. **Check My Diet** reviews a plan against the user's own targets, and each plan has its own context-aware assistant. Each card has a hand-picked food photo. See [docs/DIET_FEATURE.md](docs/DIET_FEATURE.md).
 
 | Metric (held-out test set) | Base Qwen3-4B | Fine-tuned |
 | --- | --- | --- |
@@ -38,7 +41,7 @@ Recipe card ◀─ JSON recipe ◀─ dietary validator ◀─ Qwen3-4B + LoRA
 
 | Layer | Stack |
 | --- | --- |
-| Frontend | React 18, TypeScript, Vite |
+| Frontend | React 19, TypeScript, Vite |
 | Backend | FastAPI, SQLAlchemy, JWT (python-jose), bcrypt |
 | Model | Qwen/Qwen3-4B + LoRA (r 16, α 32) via PyTorch, Transformers, PEFT |
 | Data | Food.com `RAW_recipes.csv`: 231,637 recipes cleaned to 229,168, each labeled by diet |
@@ -81,11 +84,17 @@ cd frontend && npm ci && npm run dev       # http://localhost:5173
 
 Set `SLM_GENERATE=false` to skip the neural model and run in fast retrieval-only mode.
 
+Diet planning data (one time, ~690 MB download; `run_on_mac.command` does this automatically):
+
+```bash
+bash scripts/download_diet_data.sh     # Food.com recipes + USDA FoodData Central -> data/processed/diet_recipes.db
+```
+
 ## Deploying
 
 **Docker (backend + PostgreSQL):** run `bash scripts/download_assets.sh`, set `SECRET_KEY` and `POSTGRES_PASSWORD` in `.env`, then `docker-compose up --build -d`. Containers on a Mac can't use the Apple GPU, so use a Linux host with an NVIDIA GPU for real traffic.
 
-**Linux GPU server:** install a CUDA build of PyTorch and `requirements.txt`, build the frontend with `VITE_API_URL=/api npm run build`, run `uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --workers 1`, and serve `frontend/dist` with Nginx, proxying `/api/` to port 8000. The [technical report](docs/Nourish_SLM_Technical_Report.pdf) has the full step-by-step guide.
+**Linux GPU server:** install a CUDA build of PyTorch and `requirements.txt`, build the frontend with `VITE_API_URL=/api npm run build`, run `uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --workers 1`, and serve `frontend/dist` with any static web server (for example Nginx, optional), proxying `/api/` to port 8000. The [technical report](docs/Nourish_SLM_Technical_Report.pdf) has the full step-by-step guide.
 
 Main settings in `.env`: `SECRET_KEY` (required), `DATABASE_URL` (defaults to SQLite), `CORS_ORIGINS`, `SLM_GENERATE`, `SLM_MAX_NEW_TOKENS`.
 
@@ -113,12 +122,13 @@ run_on_mac.command    one-click setup and launch
 ## Tests
 
 ```bash
-SLM_GENERATE=false python -m pytest tests/test_classifier.py tests/test_backend.py
+SLM_GENERATE=false python -m pytest tests/test_classifier.py tests/test_backend.py tests/test_synchronization.py tests/test_diet.py tests/test_allergy_nutrition.py
 ```
 
 ## Limitations
 
-- Diet checks are keyword-based and can miss hidden animal products (for example Worcestershire sauce). Not a substitute for allergen or medical advice.
+- Diet and allergy checks are keyword-based and can miss hidden ingredients in packaged products (for example anchovies in Worcestershire sauce, or wheat in a sauce mix). Not a substitute for medical advice: always check labels.
+- Nutrition for model-written recipes is approximate, because the amounts are typical Food.com quantities rather than the exact amounts you use.
 - Trained for one epoch on 6,000 examples; more data should improve recipe quality further.
 - The UI currently offers Indian, Italian and Continental cuisines.
 

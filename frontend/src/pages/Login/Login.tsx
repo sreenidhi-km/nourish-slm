@@ -34,7 +34,13 @@ export const Login: React.FC<LoginProps> = ({
       await authService.login(email, password);
       onSuccess();
     } catch (err: any) {
-      setError(err.response?.data?.detail || 'Invalid email or password. Please try again.');
+      if (!err?.response) {
+        // No HTTP response: the backend is down or still starting (e.g. loading the model)
+        setError('Cannot reach the Nourish server. It may still be starting up - please wait a moment and try again.');
+      } else {
+        const detail = err.response?.data?.detail;
+        setError(typeof detail === 'string' ? detail : 'Invalid email or password. Please try again.');
+      }
     } finally {
       setLoading(false);
     }

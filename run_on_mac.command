@@ -24,15 +24,27 @@ python -m pip install -q -r requirements.txt
 step "Model and data"
 bash scripts/download_assets.sh
 
+step "Diet planning data"
+if [ ! -s data/processed/diet_recipes.db ]; then
+  bash scripts/download_diet_data.sh || echo "Diet data not built yet: the Diet section will show a setup message."
+fi
+
 step "Configuration"
 if [ ! -f .env ]; then
   cp .env.example .env
   echo "SECRET_KEY=$(python -c 'import secrets; print(secrets.token_urlsafe(48))')" >> .env
   echo "Created .env with a new SECRET_KEY"
 fi
+# Make sure .env has a real SECRET_KEY (an empty one would fall back to a random key on every start)
+if ! grep -q '^SECRET_KEY=..*' .env; then
+  NEWKEY=$(python -c 'import secrets; print(secrets.token_urlsafe(48))')
+  if grep -q '^SECRET_KEY=' .env; then sed -i '' "s|^SECRET_KEY=.*|SECRET_KEY=$NEWKEY|" .env; else echo "SECRET_KEY=$NEWKEY" >> .env; fi
+  echo "Added a new SECRET_KEY to .env"
+fi
 
 step "Frontend"
-if [ ! -f frontend/dist/index.html ]; then
+# Build when there is no build yet, or when the frontend source changed since the last build
+if [ ! -f frontend/dist/index.html ] || [ -n "$(find frontend/src frontend/public -newer frontend/dist/index.html -print -quit 2>/dev/null)" ]; then
   command -v npm >/dev/null || { echo "Node.js 18+ is required (brew install node)."; exit 1; }
   (cd frontend && npm ci && npm run build)
 fi

@@ -1,7 +1,10 @@
 import React from 'react';
 import type { ChatSession } from '../../types';
+import type { DietPlanSummary } from '../../types/diet';
 import { VeltrisLogo } from '../VeltrisLogo/VeltrisLogo';
-import { Plus, MessageSquare, Bookmark, Heart, Settings, LogOut, Utensils, Trash2 } from 'lucide-react';
+import { Plus, MessageSquare, Bookmark, Heart, Settings, LogOut, Utensils, Trash2, Salad, ClipboardList, X } from 'lucide-react';
+
+export type AppTab = 'chat' | 'diet' | 'saved' | 'favorites' | 'settings';
 
 interface SidebarProps {
   chatSessions: ChatSession[];
@@ -9,9 +12,17 @@ interface SidebarProps {
   onSelectChat: (chatId: string) => void;
   onNewChat: () => void;
   onDeleteChat: (chatId: string) => void;
-  activeTab: 'chat' | 'saved' | 'favorites' | 'settings';
-  onSelectTab: (tab: 'chat' | 'saved' | 'favorites' | 'settings') => void;
+  activeTab: AppTab;
+  onSelectTab: (tab: AppTab) => void;
   onLogout: () => void;
+  // Diet section
+  dietPlans?: DietPlanSummary[];
+  activeDietPlanId?: string;
+  onOpenDiet?: () => void;
+  onOpenDietPlan?: (planId: string) => void;
+  // Mobile drawer
+  mobileOpen?: boolean;
+  onCloseMobile?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -22,7 +33,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onDeleteChat,
   activeTab,
   onSelectTab,
-  onLogout
+  onLogout,
+  dietPlans = [],
+  activeDietPlanId,
+  onOpenDiet,
+  onOpenDietPlan,
+  mobileOpen = false,
+  onCloseMobile,
 }) => {
   const navItemStyle = (isActive: boolean): React.CSSProperties => ({
     display: 'flex',
@@ -42,8 +59,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
     boxShadow: isActive ? 'var(--shadow-xs)' : 'none',
   });
 
+  const close = () => onCloseMobile && onCloseMobile();
+
   return (
-    <aside style={{
+    <>
+    <div className={`sidebar-overlay ${mobileOpen ? 'open' : ''}`} onClick={close} aria-hidden="true" />
+    <aside className={`app-sidebar ${mobileOpen ? 'open' : ''}`} aria-label="Main navigation" style={{
       width: '256px',
       backgroundColor: 'var(--color-bg-sidebar)',
       borderRight: '1px solid var(--color-border)',
@@ -85,11 +106,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
             AI Food Assistant
           </span>
         </div>
+        <button className="diet-icon-btn mobile-only" style={{ marginLeft: 'auto' }} onClick={close} aria-label="Close menu">
+          <X size={15} />
+        </button>
       </div>
 
       {/* New Chat Button */}
       <button
-        onClick={onNewChat}
+        onClick={() => { onNewChat(); close(); }}
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -113,10 +137,56 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <span>New Recipe Chat</span>
       </button>
 
-      {/* Recent Chats Section */}
+      {/* Scrollable middle: Diet section above Chat History */}
       <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '2px' }}>
+        {/* 1. Diet */}
+        <button
+          onClick={() => { onOpenDiet && onOpenDiet(); close(); }}
+          style={{ ...navItemStyle(activeTab === 'diet' && !activeDietPlanId), marginBottom: '2px' }}
+          aria-current={activeTab === 'diet' && !activeDietPlanId ? 'page' : undefined}
+        >
+          <Salad size={16} color={activeTab === 'diet' && !activeDietPlanId ? 'var(--color-brand)' : 'var(--color-sage)'} />
+          <span>Diet</span>
+          <span style={{
+            marginLeft: 'auto', fontSize: '0.62rem', fontWeight: 700, padding: '1px 7px', borderRadius: 'var(--radius-full)',
+            backgroundColor: 'var(--color-sage-light)', color: 'var(--color-sage)'
+          }}>Plans</span>
+        </button>
+
+        {/* 2. My Diet Plans */}
+        {dietPlans.length > 0 && (
+          <>
+            <div style={{
+              padding: '8px 10px 4px 10px', fontSize: '0.68rem', fontWeight: 700, color: 'var(--color-text-muted)',
+              textTransform: 'uppercase', letterSpacing: '0.6px'
+            }}>
+              My Diet Plans
+            </div>
+            {dietPlans.slice(0, 6).map(p => {
+              const sel = activeTab === 'diet' && activeDietPlanId === p.id;
+              return (
+                <button
+                  key={p.id}
+                  onClick={() => { onOpenDietPlan && onOpenDietPlan(p.id); close(); }}
+                  title={`${p.name} · ${p.category_name}`}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: '8px', padding: '7px 10px', borderRadius: 'var(--radius-sm)',
+                    backgroundColor: sel ? 'var(--color-bg-card)' : 'transparent',
+                    color: sel ? 'var(--color-brand)' : 'var(--color-text-secondary)', fontWeight: sel ? 600 : 400,
+                    fontSize: '0.83rem', width: '100%', textAlign: 'left', boxShadow: sel ? 'var(--shadow-xs)' : 'none', cursor: 'pointer',
+                  }}
+                >
+                  <ClipboardList size={13} style={{ flexShrink: 0, opacity: 0.75 }} />
+                  <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{p.name}</span>
+                </button>
+              );
+            })}
+          </>
+        )}
+
+        {/* 3. Chat History */}
         <div style={{
-          padding: '4px 10px 6px 10px',
+          padding: '12px 10px 6px 10px',
           fontSize: '0.68rem',
           fontWeight: 700,
           color: 'var(--color-text-muted)',
@@ -144,6 +214,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 onClick={() => {
                   onSelectTab('chat');
                   onSelectChat(session.id);
+                  close();
                 }}
                 style={{
                   display: 'flex',
@@ -203,7 +274,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         gap: '2px'
       }}>
         <button
-          onClick={() => onSelectTab('saved')}
+          onClick={() => { onSelectTab('saved'); close(); }}
           style={navItemStyle(activeTab === 'saved')}
         >
           <Bookmark size={15} />
@@ -211,7 +282,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </button>
 
         <button
-          onClick={() => onSelectTab('favorites')}
+          onClick={() => { onSelectTab('favorites'); close(); }}
           style={navItemStyle(activeTab === 'favorites')}
         >
           <Heart size={15} />
@@ -219,7 +290,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </button>
 
         <button
-          onClick={() => onSelectTab('settings')}
+          onClick={() => { onSelectTab('settings'); close(); }}
           style={navItemStyle(activeTab === 'settings')}
         >
           <Settings size={15} />
@@ -262,5 +333,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <VeltrisLogo height={26} />
       </div>
     </aside>
+    </>
   );
 };

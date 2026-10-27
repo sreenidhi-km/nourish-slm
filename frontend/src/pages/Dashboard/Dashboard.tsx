@@ -1,8 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { User, DietaryPreference, ChatSession, Message, RecipeData } from '../../types';
 import { PreferenceToggle } from '../../components/PreferenceToggle/PreferenceToggle';
+import { AllergyToggle, ALLERGY_OPTIONS } from '../../components/AllergyToggle/AllergyToggle';
 import { UserMenu } from '../../components/UserMenu/UserMenu';
 import { Sidebar } from '../../components/Sidebar/Sidebar';
+import type { AppTab } from '../../components/Sidebar/Sidebar';
+import { DietDashboard } from '../Diet/DietDashboard';
+import { DietPlanPage } from '../Diet/DietPlanPage';
+import { dietService } from '../../services/diet';
+import type { DietPlanSummary } from '../../types/diet';
+import '../../styles/diet.css';
 import { ChatMessage } from '../../components/ChatMessage/ChatMessage';
 import { ChatInput } from '../../components/ChatInput/ChatInput';
 import { LoadingState } from '../../components/LoadingState/LoadingState';
@@ -12,7 +19,7 @@ import { SettingsPage } from '../Settings/Settings';
 import { authService } from '../../services/auth';
 import { chatService } from '../../services/chat';
 import { recipeService } from '../../services/recipes';
-import { Utensils, Check, Globe } from 'lucide-react';
+import { Utensils, Check, Globe, Menu, Salad } from 'lucide-react';
 
 interface DashboardProps {
   user: User;
@@ -29,7 +36,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
   onToggleDarkMode
 }) => {
   const [user, setUser] = useState<User>(initialUser);
-  const [activeTab, setActiveTab] = useState<'chat' | 'saved' | 'favorites' | 'settings'>('chat');
+  const [activeTab, setActiveTab] = useState<AppTab>('chat');
+  // Diet section state: dashboard of categories, or a specific plan (by category or saved plan id)
+  const [dietView, setDietView] = useState<{ categoryKey?: string; planId?: string; nonce: number } | null>(null);
+  const [dietPlans, setDietPlans] = useState<DietPlanSummary[]>([]);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [chatSessions, setChatSessions] = useState<ChatSession[]>([]);
   const [activeChatId, setActiveChatId] = useState<string | undefined>(undefined);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -44,7 +55,31 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
   useEffect(() => {
     loadChatHistory();
+    loadDietPlans();
   }, []);
+
+  const loadDietPlans = async () => {
+    try {
+      setDietPlans(await dietService.listPlans(true));
+    } catch (e) {
+      // non-fatal: the sidebar simply shows no saved plans
+    }
+  };
+
+  const openDiet = () => {
+    setActiveTab('diet');
+    setDietView(null);
+  };
+
+  const openDietCategory = (key: string) => {
+    setActiveTab('diet');
+    setDietView({ categoryKey: key, nonce: Date.now() });
+  };
+
+  const openDietPlan = (planId: string) => {
+    setActiveTab('diet');
+    setDietView({ planId, nonce: Date.now() });
+  };
 
   useEffect(() => {
     scrollToBottom();
@@ -102,6 +137,19 @@ export const Dashboard: React.FC<DashboardProps> = ({
     }
   };
 
+  const handleAllergiesChange = async (next: string[]) => {
+    const prev = user.allergies || [];
+    setUser(u => ({ ...u, allergies: next }));          // update immediately; saved in the background
+    try {
+      await authService.updateAllergies(next);
+      const names = next.map(k => ALLERGY_OPTIONS.find(o => o.key === k)?.label || k);
+      showToast(next.length ? `Allergy check on: ${names.join(', ')}` : 'Allergy check turned off', 'success');
+    } catch (e) {
+      setUser(u => ({ ...u, allergies: prev }));
+      showToast('Failed to save allergies', 'error');
+    }
+  };
+
   const showToast = (msg: string, type: 'success' | 'error' = 'success') => {
     setToastMessage(msg);
     setToastType(type);
@@ -116,7 +164,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
     setMessages(prev => [...prev, userMsg]);
 
     try {
-      const res = await chatService.sendMessage(text, user.dietary_preference, cuisine, activeChatId);
+      const res = await chatService.sendMessage(text, user.dietary_preference, cuisine, activeChatId, user.allergies || []);
 
       if (!activeChatId && res.chat_id) {
         setActiveChatId(res.chat_id);
@@ -197,6 +245,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
       {/* Sidebar */}
       <Sidebar
+        dietPlans={dietPlans}
+        activeDietPlanId={activeTab === 'diet' ? dietView?.planId : undefined}
+        onOpenDiet={openDiet}
+        onOpenDietPlan={openDietPlan}
+        mobileOpen={mobileNavOpen}
+        onCloseMobile={() => setMobileNavOpen(false)}
         chatSessions={chatSessions}
         activeChatId={activeChatId}
         onSelectChat={loadChatSession}
@@ -214,10 +268,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
         flexDirection: 'column',
         height: '100vh',
         backgroundColor: 'var(--color-bg-main)',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        minWidth: 0
       }}>
         {/* Header */}
-        <header style={{
+        <header className="app-header" style={{
           height: '60px',
           borderBottom: '1px solid var(--color-border)',
           backgroundColor: 'var(--color-bg-card)',
@@ -229,17 +284,20 @@ export const Dashboard: React.FC<DashboardProps> = ({
           zIndex: 10,
           flexShrink: 0,
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <Utensils size={18} color="var(--color-brand)" />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
+            <button className="diet-icon-btn mobile-only" onClick={() => setMobileNavOpen(true)} aria-label="Open menu">
+              <Menu size={16} />
+            </button>
+            {activeTab === 'diet' ? <Salad size={18} color="var(--color-sage)" /> : <Utensils size={18} color="var(--color-brand)" />}
             <h2 style={{
               fontSize: '0.975rem',
               fontWeight: 700,
               color: 'var(--color-text-primary)',
               fontFamily: 'var(--font-serif)'
             }}>
-              Nourish SLM
+              {activeTab === 'diet' ? 'Diet Planning' : 'Nourish SLM'}
             </h2>
-            <span style={{
+            <span className="header-optional" style={{
               fontSize: '0.7rem',
               padding: '2px 8px',
               borderRadius: 'var(--radius-full)',
@@ -254,8 +312,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             {/* Cuisine indicator */}
-            {selectedCuisine !== 'All' && (
-              <div style={{
+            {selectedCuisine !== 'All' && activeTab === 'chat' && (
+              <div className="header-optional" style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: '5px',
@@ -278,6 +336,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
               onSelectPreference={handlePreferenceChange}
             />
 
+            {/* Allergy checkpoint */}
+            {activeTab === 'chat' && (
+              <AllergyToggle selected={user.allergies || []} onChange={handleAllergiesChange} />
+            )}
+
             {/* Dark Mode Toggle */}
             <ThemeToggle isDarkMode={isDarkMode} onToggle={onToggleDarkMode} size="sm" />
 
@@ -287,6 +350,21 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </header>
 
         {/* View Switcher */}
+        {activeTab === 'diet' && (
+          dietView ? (
+            <DietPlanPage
+              key={`${dietView.categoryKey || ''}-${dietView.planId || ''}-${dietView.nonce}`}
+              categoryKey={dietView.categoryKey}
+              planId={dietView.planId}
+              onBack={openDiet}
+              onPlansChanged={loadDietPlans}
+              onOpenPlan={openDietPlan}
+              notify={showToast}
+            />
+          ) : (
+            <DietDashboard onOpenCategory={openDietCategory} />
+          )
+        )}
         {activeTab === 'saved' && <SavedRecipesPage type="saved" onNewChat={handleNewChat} />}
         {activeTab === 'favorites' && <SavedRecipesPage type="favorites" onNewChat={handleNewChat} />}
         {activeTab === 'settings' && (

@@ -1,0 +1,6431 @@
+{
+"source":"Median per-serving amounts across Food.com recipes (diet_recipes.db)",
+"ingredients":{
+"-inch flour tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":25
+},
+"active yeast":{
+"g_per_serving":0.9,
+"unit":"tsp",
+"qty_per_serving":0.1875,
+"recipes":37
+},
+"aged balsamic vinegar":{
+"g_per_serving":4.0,
+"unit":"tbsp",
+"qty_per_serving":0.375,
+"recipes":9
+},
+"aged cheddar cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":9
+},
+"alfredo sauce":{
+"g_per_serving":61.4,
+"unit":"oz",
+"qty_per_serving":2.1667,
+"recipes":8
+},
+"all purpose flour":{
+"g_per_serving":7.8,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":4387
+},
+"allspice":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":272
+},
+"almond butter":{
+"g_per_serving":10.6,
+"unit":"tbsp",
+"qty_per_serving":1.0,
+"recipes":13
+},
+"almond milk":{
+"g_per_serving":52.4,
+"unit":"cup",
+"qty_per_serving":0.225,
+"recipes":13
+},
+"almonds":{
+"g_per_serving":8.9,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":304
+},
+"american cheese":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":29
+},
+"angel hair pasta":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":84
+},
+"apple":{
+"g_per_serving":37.2,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":257
+},
+"apple butter":{
+"g_per_serving":28.4,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":20
+},
+"apple cider vinegar":{
+"g_per_serving":7.5,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":165
+},
+"apple juice":{
+"g_per_serving":36.2,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":138
+},
+"apples":{
+"g_per_serving":80.9,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":168
+},
+"apricot nectar":{
+"g_per_serving":85.0,
+"unit":"cup",
+"qty_per_serving":0.2188,
+"recipes":11
+},
+"artichokes":{
+"g_per_serving":128.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":14
+},
+"arugula":{
+"g_per_serving":18.9,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":41
+},
+"asparagus":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":224
+},
+"avocado":{
+"g_per_serving":25.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":25
+},
+"avocados":{
+"g_per_serving":60.2,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":14
+},
+"baby carrots":{
+"g_per_serving":37.8,
+"unit":"count",
+"qty_per_serving":2.5,
+"recipes":78
+},
+"baby corn":{
+"g_per_serving":30.0,
+"unit":"g",
+"qty_per_serving":30.0,
+"recipes":13
+},
+"baby new potatoes":{
+"g_per_serving":207.1,
+"unit":"g",
+"qty_per_serving":187.5,
+"recipes":8
+},
+"baby portabella mushrooms":{
+"g_per_serving":31.7,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":18
+},
+"baby potatoes":{
+"g_per_serving":200.0,
+"unit":"g",
+"qty_per_serving":150.0,
+"recipes":25
+},
+"baby red potatoes":{
+"g_per_serving":226.8,
+"unit":"lb",
+"qty_per_serving":0.4,
+"recipes":11
+},
+"baby shrimp":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":13
+},
+"baby spinach":{
+"g_per_serving":28.3,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":164
+},
+"bacon":{
+"g_per_serving":28.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":1338
+},
+"bacon bits":{
+"g_per_serving":4.7,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":64
+},
+"bagel":{
+"g_per_serving":81.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":12
+},
+"bagels":{
+"g_per_serving":81.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":19
+},
+"baked beans":{
+"g_per_serving":113.4,
+"unit":"g",
+"qty_per_serving":200.0,
+"recipes":9
+},
+"baking potato":{
+"g_per_serving":99.4,
+"unit":"large",
+"qty_per_serving":0.375,
+"recipes":30
+},
+"baking potatoes":{
+"g_per_serving":213.0,
+"unit":"large",
+"qty_per_serving":0.6667,
+"recipes":198
+},
+"baking powder":{
+"g_per_serving":1.1,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":1098
+},
+"baking soda":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.0833,
+"recipes":558
+},
+"balsamic vinegar":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":693
+},
+"bamboo shoot":{
+"g_per_serving":18.9,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":17
+},
+"banana":{
+"g_per_serving":59.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":309
+},
+"banana pepper":{
+"g_per_serving":7.7,
+"unit":"cup",
+"qty_per_serving":0.1,
+"recipes":8
+},
+"bananas":{
+"g_per_serving":59.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":129
+},
+"barbecue sauce":{
+"g_per_serving":23.8,
+"unit":"cup",
+"qty_per_serving":0.1056,
+"recipes":287
+},
+"barley":{
+"g_per_serving":22.2,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":39
+},
+"basil":{
+"g_per_serving":0.5,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":1095
+},
+"basil leaves":{
+"g_per_serving":12.0,
+"unit":"count",
+"qty_per_serving":2.0,
+"recipes":322
+},
+"basmati rice":{
+"g_per_serving":57.8,
+"unit":"cup",
+"qty_per_serving":0.2812,
+"recipes":128
+},
+"beef broth":{
+"g_per_serving":66.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":234
+},
+"beef roast":{
+"g_per_serving":170.1,
+"unit":"lb",
+"qty_per_serving":0.3542,
+"recipes":15
+},
+"beefsteak tomatoes":{
+"g_per_serving":151.5,
+"unit":"count",
+"qty_per_serving":0.8125,
+"recipes":12
+},
+"bell pepper":{
+"g_per_serving":19.8,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":301
+},
+"bell peppers":{
+"g_per_serving":59.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":112
+},
+"bibb lettuce":{
+"g_per_serving":28.8,
+"unit":"head",
+"qty_per_serving":0.25,
+"recipes":18
+},
+"black beans":{
+"g_per_serving":60.0,
+"unit":"oz",
+"qty_per_serving":3.0,
+"recipes":92
+},
+"black olives":{
+"g_per_serving":11.2,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":266
+},
+"black pepper":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":3474
+},
+"blackberries":{
+"g_per_serving":30.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"blackberry":{
+"g_per_serving":30.0,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":8
+},
+"blanched almond":{
+"g_per_serving":10.4,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":10
+},
+"blue cheese":{
+"g_per_serving":16.9,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":120
+},
+"blueberries":{
+"g_per_serving":27.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":211
+},
+"bologna":{
+"g_per_serving":49.0,
+"unit":"slice",
+"qty_per_serving":1.75,
+"recipes":12
+},
+"bone-in chicken breasts":{
+"g_per_serving":272.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":8
+},
+"boneless chicken":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":21
+},
+"boneless chicken breast":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":37
+},
+"boneless chicken breasts":{
+"g_per_serving":272.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":186
+},
+"boneless chicken thighs":{
+"g_per_serving":211.0,
+"unit":"count",
+"qty_per_serving":1.75,
+"recipes":16
+},
+"boneless lamb":{
+"g_per_serving":119.2,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"boneless leg lamb":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"boneless pork":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":12
+},
+"boneless skinless chicken":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":31
+},
+"boneless skinless chicken breast":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":324
+},
+"boneless skinless chicken breast halves":{
+"g_per_serving":272.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":457
+},
+"boneless skinless chicken breasts":{
+"g_per_serving":272.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":934
+},
+"boneless skinless chicken thighs":{
+"g_per_serving":151.2,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":143
+},
+"boston lettuce":{
+"g_per_serving":40.8,
+"unit":"head",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"bottled garlic":{
+"g_per_serving":1.1,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":27
+},
+"bottled salsa":{
+"g_per_serving":21.7,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":9
+},
+"bow tie pasta":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":53
+},
+"bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":395
+},
+"bread flour":{
+"g_per_serving":34.3,
+"unit":"cup",
+"qty_per_serving":0.2812,
+"recipes":37
+},
+"bread machine yeast":{
+"g_per_serving":0.7,
+"unit":"tsp",
+"qty_per_serving":0.1703,
+"recipes":8
+},
+"breadcrumbs":{
+"g_per_serving":13.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":949
+},
+"breakfast sausage":{
+"g_per_serving":45.4,
+"unit":"lb",
+"qty_per_serving":0.1125,
+"recipes":20
+},
+"brie cheese":{
+"g_per_serving":31.2,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":59
+},
+"broccoli":{
+"g_per_serving":56.7,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":273
+},
+"broiler-fryer chickens":{
+"g_per_serving":274.0,
+"unit":"lb",
+"qty_per_serving":0.6042,
+"recipes":10
+},
+"brown basmati rice":{
+"g_per_serving":38.5,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":12
+},
+"brown bread":{
+"g_per_serving":67.5,
+"unit":"slice",
+"qty_per_serving":1.5,
+"recipes":8
+},
+"brown lentils":{
+"g_per_serving":32.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":20
+},
+"brown mustard":{
+"g_per_serving":4.0,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":10
+},
+"brown onion":{
+"g_per_serving":27.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":59
+},
+"brown onions":{
+"g_per_serving":55.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":14
+},
+"brown rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":119
+},
+"brown rice flour":{
+"g_per_serving":9.9,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":8
+},
+"brown sugar":{
+"g_per_serving":6.9,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":1825
+},
+"brussels sprout":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":15
+},
+"brussels sprouts":{
+"g_per_serving":141.7,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":23
+},
+"buckwheat flour":{
+"g_per_serving":30.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"bulgur":{
+"g_per_serving":23.3,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":29
+},
+"bulk pork sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":47
+},
+"bulk sausage":{
+"g_per_serving":66.1,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":20
+},
+"burrito-size flour tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":21
+},
+"butter":{
+"g_per_serving":7.1,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":7212
+},
+"butter lettuce":{
+"g_per_serving":156.5,
+"unit":"head",
+"qty_per_serving":0.3125,
+"recipes":8
+},
+"buttermilk":{
+"g_per_serving":40.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":348
+},
+"butternut squash":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.3333,
+"recipes":81
+},
+"button mushroom":{
+"g_per_serving":37.8,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":37
+},
+"button mushrooms":{
+"g_per_serving":37.5,
+"unit":"oz",
+"qty_per_serving":1.5,
+"recipes":99
+},
+"cabbage":{
+"g_per_serving":89.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":261
+},
+"caesar salad dressing":{
+"g_per_serving":34.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":25
+},
+"canadian bacon":{
+"g_per_serving":28.5,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":63
+},
+"candied ginger":{
+"g_per_serving":3.0,
+"unit":"tbsp",
+"qty_per_serving":0.4375,
+"recipes":18
+},
+"canned black beans":{
+"g_per_serving":45.0,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":41
+},
+"canned chicken broth":{
+"g_per_serving":62.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":16
+},
+"canned corn":{
+"g_per_serving":51.1,
+"unit":"oz",
+"qty_per_serving":1.9375,
+"recipes":12
+},
+"canned low sodium chicken broth":{
+"g_per_serving":80.4,
+"unit":"cup",
+"qty_per_serving":0.3229,
+"recipes":18
+},
+"canned mushrooms":{
+"g_per_serving":35.9,
+"unit":"oz",
+"qty_per_serving":1.2,
+"recipes":8
+},
+"canned pineapple":{
+"g_per_serving":73.1,
+"unit":"cup",
+"qty_per_serving":0.3125,
+"recipes":10
+},
+"canned pumpkin":{
+"g_per_serving":40.8,
+"unit":"cup",
+"qty_per_serving":0.1458,
+"recipes":28
+},
+"canned salmon":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":10
+},
+"canned tomato":{
+"g_per_serving":60.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":27
+},
+"canned tomato sauce":{
+"g_per_serving":53.2,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":15
+},
+"canned tomatoes":{
+"g_per_serving":95.0,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":86
+},
+"canned tuna":{
+"g_per_serving":84.2,
+"unit":"oz",
+"qty_per_serving":2.5,
+"recipes":12
+},
+"canned unsweetened coconut milk":{
+"g_per_serving":56.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":15
+},
+"canola oil":{
+"g_per_serving":4.5,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":682
+},
+"capers":{
+"g_per_serving":2.9,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":282
+},
+"cardamom":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":123
+},
+"carrot":{
+"g_per_serving":15.2,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":1135
+},
+"carrots":{
+"g_per_serving":30.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":1060
+},
+"catsup":{
+"g_per_serving":15.0,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":97
+},
+"cauliflower":{
+"g_per_serving":105.0,
+"unit":"head",
+"qty_per_serving":0.1667,
+"recipes":158
+},
+"cayenne":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":305
+},
+"cayenne pepper":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":1131
+},
+"celery":{
+"g_per_serving":12.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":1671
+},
+"celery rib":{
+"g_per_serving":10.7,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":134
+},
+"celery ribs":{
+"g_per_serving":25.6,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":346
+},
+"celery salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.1042,
+"recipes":92
+},
+"cheddar cheese":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":2223
+},
+"cheese tortellini":{
+"g_per_serving":85.0,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":29
+},
+"cherry tomatoes":{
+"g_per_serving":74.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":311
+},
+"chicken":{
+"g_per_serving":226.8,
+"unit":"lb",
+"qty_per_serving":0.5,
+"recipes":214
+},
+"chicken breast":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":140
+},
+"chicken breast halves":{
+"g_per_serving":272.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":79
+},
+"chicken breast tenders":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":15
+},
+"chicken breasts":{
+"g_per_serving":226.7,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":557
+},
+"chicken broth":{
+"g_per_serving":66.1,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":1339
+},
+"chicken stock":{
+"g_per_serving":120.0,
+"unit":"cup",
+"qty_per_serving":0.4375,
+"recipes":869
+},
+"chicken tenders":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":49
+},
+"chicken thigh":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.2083,
+"recipes":9
+},
+"chicken thighs":{
+"g_per_serving":160.6,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":148
+},
+"chickpea flour":{
+"g_per_serving":15.1,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":12
+},
+"chickpeas":{
+"g_per_serving":89.8,
+"unit":"oz",
+"qty_per_serving":2.5,
+"recipes":51
+},
+"chili":{
+"g_per_serving":2.0,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":35
+},
+"chili pepper":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":16
+},
+"chili powder":{
+"g_per_serving":0.7,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":1367
+},
+"chili sauce":{
+"g_per_serving":12.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":142
+},
+"chili seasoning mix":{
+"g_per_serving":5.1,
+"unit":"oz",
+"qty_per_serving":0.2969,
+"recipes":11
+},
+"chipotle pepper":{
+"g_per_serving":0.7,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":18
+},
+"chives":{
+"g_per_serving":1.5,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":456
+},
+"chocolate chips":{
+"g_per_serving":9.1,
+"unit":"cup",
+"qty_per_serving":0.05,
+"recipes":22
+},
+"chocolate syrup":{
+"g_per_serving":19.0,
+"unit":"tbsp",
+"qty_per_serving":1.25,
+"recipes":17
+},
+"chorizo sausage":{
+"g_per_serving":50.0,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":67
+},
+"chow mein noodles":{
+"g_per_serving":14.0,
+"unit":"cup",
+"qty_per_serving":0.1429,
+"recipes":15
+},
+"chunky peanut butter":{
+"g_per_serving":21.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":20
+},
+"chunky salsa":{
+"g_per_serving":39.2,
+"unit":"cup",
+"qty_per_serving":0.1615,
+"recipes":40
+},
+"cider vinegar":{
+"g_per_serving":5.6,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":353
+},
+"cilantro":{
+"g_per_serving":0.7,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":1486
+},
+"cilantro leaves":{
+"g_per_serving":1.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":122
+},
+"cinnamon":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":1725
+},
+"cinnamon raisin bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":9
+},
+"cinnamon sugar":{
+"g_per_serving":2.1,
+"unit":"tbsp",
+"qty_per_serving":0.2667,
+"recipes":15
+},
+"clear honey":{
+"g_per_serving":7.1,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":29
+},
+"cloves":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0417,
+"recipes":151
+},
+"cloves garlic":{
+"g_per_serving":1.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":45
+},
+"coarse black pepper":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":130
+},
+"coarse grain mustard":{
+"g_per_serving":3.9,
+"unit":"tsp",
+"qty_per_serving":0.5,
+"recipes":56
+},
+"coarse salt":{
+"g_per_serving":1.1,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":71
+},
+"coarse sea salt":{
+"g_per_serving":1.5,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"cocoa powder":{
+"g_per_serving":1.8,
+"unit":"tbsp",
+"qty_per_serving":0.4,
+"recipes":23
+},
+"coconut cream":{
+"g_per_serving":37.1,
+"unit":"cup",
+"qty_per_serving":0.1548,
+"recipes":40
+},
+"coconut milk":{
+"g_per_serving":56.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":240
+},
+"coconut oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.4167,
+"recipes":34
+},
+"cod":{
+"g_per_serving":170.1,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":18
+},
+"colby cheese":{
+"g_per_serving":25.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":29
+},
+"colby-monterey jack cheese":{
+"g_per_serving":27.5,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":77
+},
+"condensed cream chicken soup":{
+"g_per_serving":47.2,
+"unit":"oz",
+"qty_per_serving":1.6667,
+"recipes":14
+},
+"confectioners u sugar":{
+"g_per_serving":10.0,
+"unit":"cup",
+"qty_per_serving":0.075,
+"recipes":50
+},
+"cooked bacon":{
+"g_per_serving":32.7,
+"unit":"slice",
+"qty_per_serving":1.1667,
+"recipes":87
+},
+"cooked basmati rice":{
+"g_per_serving":131.0,
+"unit":"cup",
+"qty_per_serving":0.7083,
+"recipes":12
+},
+"cooked beef":{
+"g_per_serving":59.1,
+"unit":"lb",
+"qty_per_serving":0.2083,
+"recipes":8
+},
+"cooked black beans":{
+"g_per_serving":86.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":20
+},
+"cooked broccoli":{
+"g_per_serving":22.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"cooked brown rice":{
+"g_per_serving":92.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":115
+},
+"cooked chicken":{
+"g_per_serving":56.0,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":468
+},
+"cooked chicken breast":{
+"g_per_serving":71.8,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":14
+},
+"cooked chicken breasts":{
+"g_per_serving":85.0,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":29
+},
+"cooked couscous":{
+"g_per_serving":111.2,
+"unit":"cup",
+"qty_per_serving":0.7083,
+"recipes":10
+},
+"cooked egg noodles":{
+"g_per_serving":80.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":13
+},
+"cooked elbow macaroni":{
+"g_per_serving":45.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":16
+},
+"cooked ham":{
+"g_per_serving":42.5,
+"unit":"oz",
+"qty_per_serving":1.3333,
+"recipes":56
+},
+"cooked long-grain rice":{
+"g_per_serving":79.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":28
+},
+"cooked macaroni":{
+"g_per_serving":56.7,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":23
+},
+"cooked potatoes":{
+"g_per_serving":78.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":25
+},
+"cooked quinoa":{
+"g_per_serving":77.1,
+"unit":"cup",
+"qty_per_serving":0.4167,
+"recipes":9
+},
+"cooked rice":{
+"g_per_serving":79.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":274
+},
+"cooked shrimp":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.1875,
+"recipes":54
+},
+"cooked spaghetti":{
+"g_per_serving":93.3,
+"unit":"cup",
+"qty_per_serving":1.0,
+"recipes":15
+},
+"cooked spinach":{
+"g_per_serving":22.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":10
+},
+"cooked turkey":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":17
+},
+"cooked white rice":{
+"g_per_serving":87.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":77
+},
+"cooked wild rice":{
+"g_per_serving":41.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"cooking apple":{
+"g_per_serving":38.4,
+"unit":"medium",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"cooking apples":{
+"g_per_serving":60.7,
+"unit":"count",
+"qty_per_serving":0.4,
+"recipes":14
+},
+"coriander":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.1875,
+"recipes":780
+},
+"corn":{
+"g_per_serving":48.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":177
+},
+"corn oil":{
+"g_per_serving":9.3,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":44
+},
+"corn syrup":{
+"g_per_serving":8.2,
+"unit":"cup",
+"qty_per_serving":0.0312,
+"recipes":21
+},
+"corn tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":2.0,
+"recipes":229
+},
+"corned beef":{
+"g_per_serving":85.0,
+"unit":"lb",
+"qty_per_serving":0.2,
+"recipes":21
+},
+"cornmeal":{
+"g_per_serving":10.2,
+"unit":"cup",
+"qty_per_serving":0.1,
+"recipes":170
+},
+"cornstarch":{
+"g_per_serving":2.0,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":960
+},
+"cottage cheese":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":29
+},
+"country bread":{
+"g_per_serving":52.0,
+"unit":"slice",
+"qty_per_serving":1.625,
+"recipes":14
+},
+"couscous":{
+"g_per_serving":43.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":163
+},
+"cracked black pepper":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":82
+},
+"cracked pepper":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":23
+},
+"cranberry juice":{
+"g_per_serving":71.7,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"cranberry sauce":{
+"g_per_serving":17.3,
+"unit":"tbsp",
+"qty_per_serving":1.25,
+"recipes":16
+},
+"cream":{
+"g_per_serving":30.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":274
+},
+"cream celery soup":{
+"g_per_serving":37.5,
+"unit":"oz",
+"qty_per_serving":1.3229,
+"recipes":8
+},
+"cream cheese":{
+"g_per_serving":21.3,
+"unit":"oz",
+"qty_per_serving":0.75,
+"recipes":535
+},
+"cream chicken soup":{
+"g_per_serving":69.7,
+"unit":"oz",
+"qty_per_serving":2.5,
+"recipes":35
+},
+"cream mushroom soup":{
+"g_per_serving":49.6,
+"unit":"oz",
+"qty_per_serving":1.75,
+"recipes":32
+},
+"creamy peanut butter":{
+"g_per_serving":16.1,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":86
+},
+"cremini mushroom":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.1458,
+"recipes":16
+},
+"cremini mushrooms":{
+"g_per_serving":37.8,
+"unit":"oz",
+"qty_per_serving":1.6333,
+"recipes":45
+},
+"creole mustard":{
+"g_per_serving":5.8,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"crisp bacon":{
+"g_per_serving":56.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":12
+},
+"crisp cooked bacon":{
+"g_per_serving":56.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":9
+},
+"croissants":{
+"g_per_serving":57.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":18
+},
+"crouton":{
+"g_per_serving":6.7,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":18
+},
+"croutons":{
+"g_per_serving":15.0,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":9
+},
+"crumbled feta cheese":{
+"g_per_serving":18.8,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":120
+},
+"crunchy peanut butter":{
+"g_per_serving":19.3,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":30
+},
+"crusty bread":{
+"g_per_serving":32.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":15
+},
+"crystallized ginger":{
+"g_per_serving":3.8,
+"unit":"cup",
+"qty_per_serving":0.0486,
+"recipes":15
+},
+"cucumber":{
+"g_per_serving":17.3,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":100
+},
+"cucumbers":{
+"g_per_serving":78.0,
+"unit":"slice",
+"qty_per_serving":4.0,
+"recipes":37
+},
+"cumin":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":2183
+},
+"cumin seed":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":135
+},
+"cumin seeds":{
+"g_per_serving":1.0,
+"unit":"tsp",
+"qty_per_serving":0.5,
+"recipes":58
+},
+"curd cottage cheese":{
+"g_per_serving":52.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":35
+},
+"currants":{
+"g_per_serving":7.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":29
+},
+"curry powder":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":594
+},
+"cut-up cooked chicken":{
+"g_per_serving":40.8,
+"unit":"cup",
+"qty_per_serving":0.2917,
+"recipes":8
+},
+"dark brown sugar":{
+"g_per_serving":6.9,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":146
+},
+"dark raisin":{
+"g_per_serving":18.3,
+"unit":"cup",
+"qty_per_serving":0.1111,
+"recipes":11
+},
+"dark sesame oil":{
+"g_per_serving":2.3,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":75
+},
+"dark soy sauce":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":28
+},
+"dehydrated onion":{
+"g_per_serving":1.1,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"deli ham":{
+"g_per_serving":37.8,
+"unit":"lb",
+"qty_per_serving":0.0833,
+"recipes":50
+},
+"deli roast beef":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":29
+},
+"deli turkey":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":30
+},
+"deveined shrimp":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"dijon mustard":{
+"g_per_serving":3.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":1004
+},
+"dijon-style mustard":{
+"g_per_serving":3.6,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":48
+},
+"dill pickle":{
+"g_per_serving":11.9,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":28
+},
+"dill pickles":{
+"g_per_serving":37.1,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":44
+},
+"dill weed":{
+"g_per_serving":0.0,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":126
+},
+"distilled white vinegar":{
+"g_per_serving":7.4,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":24
+},
+"double cream":{
+"g_per_serving":26.9,
+"unit":"ml",
+"qty_per_serving":37.5,
+"recipes":36
+},
+"dried apricot":{
+"g_per_serving":10.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":72
+},
+"dried apricots":{
+"g_per_serving":17.7,
+"unit":"oz",
+"qty_per_serving":0.8,
+"recipes":31
+},
+"dried basil":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":584
+},
+"dried blueberries":{
+"g_per_serving":6.7,
+"unit":"cup",
+"qty_per_serving":0.0417,
+"recipes":9
+},
+"dried chili":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.0938,
+"recipes":9
+},
+"dried chives":{
+"g_per_serving":0.0,
+"unit":"tsp",
+"qty_per_serving":0.2188,
+"recipes":24
+},
+"dried cilantro":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.1458,
+"recipes":23
+},
+"dried coriander":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":11
+},
+"dried cranberries":{
+"g_per_serving":10.0,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":194
+},
+"dried currant":{
+"g_per_serving":9.0,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":8
+},
+"dried fig":{
+"g_per_serving":18.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":9
+},
+"dried garlic":{
+"g_per_serving":1.1,
+"unit":"tbsp",
+"qty_per_serving":0.2083,
+"recipes":11
+},
+"dried lentils":{
+"g_per_serving":24.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":28
+},
+"dried mint":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":31
+},
+"dried mustard":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"dried onion":{
+"g_per_serving":2.5,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":43
+},
+"dried oregano":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":881
+},
+"dried parsley":{
+"g_per_serving":0.0,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":235
+},
+"dried red chili pepper":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.1458,
+"recipes":8
+},
+"dried spaghetti":{
+"g_per_serving":49.6,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":10
+},
+"dried thyme":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":632
+},
+"ear corn":{
+"g_per_serving":29.8,
+"unit":"count",
+"qty_per_serving":0.2083,
+"recipes":8
+},
+"edamame":{
+"g_per_serving":29.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"egg noodles":{
+"g_per_serving":37.8,
+"unit":"oz",
+"qty_per_serving":1.5,
+"recipes":137
+},
+"egg white raw":{
+"g_per_serving":11.0,
+"unit":"count",
+"qty_per_serving":0.3333,
+"recipes":484
+},
+"egg whole raw":{
+"g_per_serving":18.8,
+"unit":"count",
+"qty_per_serving":0.375,
+"recipes":6214
+},
+"egg yolk raw":{
+"g_per_serving":4.2,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":228
+},
+"eggplant":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.2188,
+"recipes":24
+},
+"eggplants":{
+"g_per_serving":108.7,
+"unit":"lb",
+"qty_per_serving":0.3958,
+"recipes":26
+},
+"elbow macaroni":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.2778,
+"recipes":243
+},
+"enchilada sauce":{
+"g_per_serving":70.9,
+"unit":"oz",
+"qty_per_serving":2.875,
+"recipes":25
+},
+"english cucumber":{
+"g_per_serving":23.4,
+"unit":"cup",
+"qty_per_serving":0.225,
+"recipes":8
+},
+"english mustard":{
+"g_per_serving":1.3,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"epazote":{
+"g_per_serving":0.6,
+"unit":"sprig",
+"qty_per_serving":0.625,
+"recipes":8
+},
+"evaporated milk":{
+"g_per_serving":34.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":99
+},
+"evaporated skim milk":{
+"g_per_serving":43.4,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":12
+},
+"extra-sharp cheddar cheese":{
+"g_per_serving":33.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":56
+},
+"farfalle pasta":{
+"g_per_serving":68.2,
+"unit":"lb",
+"qty_per_serving":0.1771,
+"recipes":29
+},
+"fat free chicken broth":{
+"g_per_serving":62.2,
+"unit":"cup",
+"qty_per_serving":0.2812,
+"recipes":34
+},
+"fat free cream cheese":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":25
+},
+"fat free egg substitute":{
+"g_per_serving":45.0,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":11
+},
+"fat free mozzarella cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":20
+},
+"fat free sour cream":{
+"g_per_serving":28.8,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":61
+},
+"fat free tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":11
+},
+"fat-free buttermilk":{
+"g_per_serving":35.7,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":10
+},
+"fat-free chicken broth":{
+"g_per_serving":88.2,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":22
+},
+"fat-free evaporated milk":{
+"g_per_serving":61.0,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":23
+},
+"fat-free half-and-half":{
+"g_per_serving":48.4,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":37
+},
+"fat-free italian salad dressing":{
+"g_per_serving":28.9,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"fat-free low-sodium chicken broth":{
+"g_per_serving":62.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":23
+},
+"fat-free mayonnaise":{
+"g_per_serving":13.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":72
+},
+"fat-free ricotta cheese":{
+"g_per_serving":53.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"fennel":{
+"g_per_serving":2.0,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":24
+},
+"feta cheese":{
+"g_per_serving":25.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":349
+},
+"fettuccine pasta":{
+"g_per_serving":60.2,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":52
+},
+"figs":{
+"g_per_serving":58.3,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":8
+},
+"fingerling potatoes":{
+"g_per_serving":184.3,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":8
+},
+"firm tofu":{
+"g_per_serving":85.0,
+"unit":"oz",
+"qty_per_serving":3.0,
+"recipes":76
+},
+"firm tomatoes":{
+"g_per_serving":76.2,
+"unit":"large",
+"qty_per_serving":0.5,
+"recipes":10
+},
+"firm white bread":{
+"g_per_serving":43.5,
+"unit":"slice",
+"qty_per_serving":1.5,
+"recipes":11
+},
+"fish sauce":{
+"g_per_serving":9.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":301
+},
+"flat leaf parsley":{
+"g_per_serving":3.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":238
+},
+"flat-leaf italian parsley":{
+"g_per_serving":1.9,
+"unit":"tbsp",
+"qty_per_serving":0.4375,
+"recipes":21
+},
+"flat-leaf parsley":{
+"g_per_serving":1.9,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":90
+},
+"flax seeds":{
+"g_per_serving":7.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":61
+},
+"flour tortilla":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":16
+},
+"flour tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":397
+},
+"floury potatoes":{
+"g_per_serving":175.0,
+"unit":"g",
+"qty_per_serving":150.0,
+"recipes":9
+},
+"fontina cheese":{
+"g_per_serving":22.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":50
+},
+"french bread":{
+"g_per_serving":56.7,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":66
+},
+"french mustard":{
+"g_per_serving":2.6,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"french rolls":{
+"g_per_serving":38.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":27
+},
+"french u s french fried onions":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.2917,
+"recipes":8
+},
+"french-fried onions":{
+"g_per_serving":22.2,
+"unit":"cup",
+"qty_per_serving":0.1458,
+"recipes":20
+},
+"frozen banana":{
+"g_per_serving":59.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":8
+},
+"frozen bananas":{
+"g_per_serving":118.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":8
+},
+"frozen broccoli":{
+"g_per_serving":58.5,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":45
+},
+"frozen carrots":{
+"g_per_serving":36.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":13
+},
+"frozen corn":{
+"g_per_serving":35.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":164
+},
+"frozen edamame":{
+"g_per_serving":57.8,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":8
+},
+"frozen green beans":{
+"g_per_serving":27.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":21
+},
+"frozen green pea":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":44
+},
+"frozen green peas":{
+"g_per_serving":50.3,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":22
+},
+"frozen hash brown potatoes":{
+"g_per_serving":105.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":33
+},
+"frozen meatballs":{
+"g_per_serving":85.0,
+"unit":"oz",
+"qty_per_serving":3.0,
+"recipes":9
+},
+"frozen mixed vegetables":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":1.8333,
+"recipes":11
+},
+"frozen orange juice concentrate":{
+"g_per_serving":16.4,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":29
+},
+"frozen peaches":{
+"g_per_serving":125.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":9
+},
+"frozen peas":{
+"g_per_serving":22.3,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":315
+},
+"frozen peas carrot":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":14
+},
+"frozen peas carrots":{
+"g_per_serving":58.3,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":11
+},
+"frozen raspberries":{
+"g_per_serving":50.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":19
+},
+"frozen spinach":{
+"g_per_serving":47.2,
+"unit":"oz",
+"qty_per_serving":1.6667,
+"recipes":166
+},
+"frozen strawberries":{
+"g_per_serving":127.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":44
+},
+"frozen whole kernel corn":{
+"g_per_serving":35.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":29
+},
+"fuji apple":{
+"g_per_serving":41.4,
+"unit":"count",
+"qty_per_serving":0.225,
+"recipes":8
+},
+"gala apples":{
+"g_per_serving":65.0,
+"unit":"count",
+"qty_per_serving":0.375,
+"recipes":8
+},
+"garam masala":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":205
+},
+"garlic":{
+"g_per_serving":1.4,
+"unit":"clove",
+"qty_per_serving":0.5,
+"recipes":2657
+},
+"garlic clove":{
+"g_per_serving":0.8,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":1863
+},
+"garlic cloves":{
+"g_per_serving":1.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":5053
+},
+"garlic powder":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":1882
+},
+"garlic salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":398
+},
+"ginger":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":1632
+},
+"gingerroot":{
+"g_per_serving":1.0,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":274
+},
+"goat cheese":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":81
+},
+"golden brown sugar":{
+"g_per_serving":7.4,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":12
+},
+"golden delicious apple":{
+"g_per_serving":42.2,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"golden raisin":{
+"g_per_serving":10.3,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":98
+},
+"golden raisins":{
+"g_per_serving":7.7,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":20
+},
+"gouda cheese":{
+"g_per_serving":33.1,
+"unit":"oz",
+"qty_per_serving":1.0833,
+"recipes":15
+},
+"grainy mustard":{
+"g_per_serving":3.9,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":34
+},
+"granny smith apple":{
+"g_per_serving":45.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":69
+},
+"granny smith apples":{
+"g_per_serving":91.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":65
+},
+"granulated garlic":{
+"g_per_serving":0.7,
+"unit":"tsp",
+"qty_per_serving":0.1875,
+"recipes":28
+},
+"granulated garlic powder":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"granulated sugar":{
+"g_per_serving":4.7,
+"unit":"cup",
+"qty_per_serving":0.05,
+"recipes":431
+},
+"grape tomatoes":{
+"g_per_serving":49.7,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":106
+},
+"grapefruit juice":{
+"g_per_serving":20.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"grapes":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"grapeseed oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":27
+},
+"greek yogurt":{
+"g_per_serving":46.3,
+"unit":"oz",
+"qty_per_serving":1.75,
+"recipes":8
+},
+"green apple":{
+"g_per_serving":27.6,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":12
+},
+"green apples":{
+"g_per_serving":60.7,
+"unit":"count",
+"qty_per_serving":0.3333,
+"recipes":11
+},
+"green beans":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.1875,
+"recipes":245
+},
+"green bell pepper":{
+"g_per_serving":18.6,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":674
+},
+"green bell peppers":{
+"g_per_serving":36.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":106
+},
+"green cabbage":{
+"g_per_serving":66.8,
+"unit":"cup",
+"qty_per_serving":0.4583,
+"recipes":82
+},
+"green chili":{
+"g_per_serving":6.2,
+"unit":"cup",
+"qty_per_serving":0.0729,
+"recipes":20
+},
+"green chili peppers":{
+"g_per_serving":4.7,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":12
+},
+"green chili salsa":{
+"g_per_serving":21.7,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":9
+},
+"green chilies":{
+"g_per_serving":14.2,
+"unit":"oz",
+"qty_per_serving":0.75,
+"recipes":69
+},
+"green leaf lettuce":{
+"g_per_serving":25.2,
+"unit":"leaf",
+"qty_per_serving":1.5,
+"recipes":18
+},
+"green lentils":{
+"g_per_serving":48.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"green onion":{
+"g_per_serving":6.2,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":1164
+},
+"green onions":{
+"g_per_serving":8.8,
+"unit":"count",
+"qty_per_serving":0.6667,
+"recipes":1696
+},
+"green peas":{
+"g_per_serving":24.2,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":48
+},
+"green pepper":{
+"g_per_serving":14.9,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":812
+},
+"green peppers":{
+"g_per_serving":29.8,
+"unit":"count",
+"qty_per_serving":0.3333,
+"recipes":161
+},
+"green seedless grape":{
+"g_per_serving":25.2,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":10
+},
+"green sweet pepper":{
+"g_per_serving":19.8,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":18
+},
+"green tomatoes":{
+"g_per_serving":107.6,
+"unit":"count",
+"qty_per_serving":0.75,
+"recipes":12
+},
+"green zucchini":{
+"g_per_serving":65.3,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"ground beef":{
+"g_per_serving":90.7,
+"unit":"lb",
+"qty_per_serving":0.2,
+"recipes":1333
+},
+"ground chicken":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":105
+},
+"ground chicken breast":{
+"g_per_serving":141.7,
+"unit":"lb",
+"qty_per_serving":0.2812,
+"recipes":9
+},
+"ground chipotle chile pepper":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":8
+},
+"ground lamb":{
+"g_per_serving":106.7,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":72
+},
+"ground lean pork":{
+"g_per_serving":85.0,
+"unit":"lb",
+"qty_per_serving":0.2188,
+"recipes":37
+},
+"ground oregano":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":25
+},
+"ground pork":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":174
+},
+"ground red pepper":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0417,
+"recipes":193
+},
+"ground sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":18
+},
+"ground turkey":{
+"g_per_serving":94.5,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":220
+},
+"ground veal":{
+"g_per_serving":37.8,
+"unit":"lb",
+"qty_per_serving":0.0833,
+"recipes":29
+},
+"gruyere cheese":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":136
+},
+"habanero pepper":{
+"g_per_serving":0.6,
+"unit":"count",
+"qty_per_serving":0.2083,
+"recipes":12
+},
+"half-and-half":{
+"g_per_serving":40.3,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":357
+},
+"hard salami":{
+"g_per_serving":28.3,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":13
+},
+"hard-boiled egg":{
+"g_per_serving":16.7,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":31
+},
+"hard-boiled eggs":{
+"g_per_serving":37.5,
+"unit":"count",
+"qty_per_serving":0.75,
+"recipes":252
+},
+"hard-cooked eggs":{
+"g_per_serving":50.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":37
+},
+"hash brown potatoes":{
+"g_per_serving":106.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":11
+},
+"head cabbage":{
+"g_per_serving":116.2,
+"unit":"medium",
+"qty_per_serving":0.125,
+"recipes":20
+},
+"head cauliflower":{
+"g_per_serving":105.0,
+"unit":"large",
+"qty_per_serving":0.1458,
+"recipes":14
+},
+"heavy cream":{
+"g_per_serving":15.0,
+"unit":"cup",
+"qty_per_serving":0.15,
+"recipes":589
+},
+"heavy whipping cream":{
+"g_per_serving":19.4,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":78
+},
+"heinz ketchup":{
+"g_per_serving":23.2,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":8
+},
+"hellmann u s mayonnaise":{
+"g_per_serving":27.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":17
+},
+"hoisin sauce":{
+"g_per_serving":10.7,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":162
+},
+"honey":{
+"g_per_serving":10.6,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":1303
+},
+"honey dijon mustard":{
+"g_per_serving":5.8,
+"unit":"tbsp",
+"qty_per_serving":0.4375,
+"recipes":11
+},
+"honey mustard":{
+"g_per_serving":7.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":49
+},
+"honey mustard dressing":{
+"g_per_serving":22.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":10
+},
+"honeydew melon":{
+"g_per_serving":42.5,
+"unit":"count",
+"qty_per_serving":0.125,
+"recipes":9
+},
+"horseradish":{
+"g_per_serving":2.5,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":65
+},
+"horseradish sauce":{
+"g_per_serving":4.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":12
+},
+"hummus":{
+"g_per_serving":33.1,
+"unit":"cup",
+"qty_per_serving":0.1458,
+"recipes":36
+},
+"hungarian paprika":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":29
+},
+"ice water":{
+"g_per_serving":11.1,
+"unit":"tbsp",
+"qty_per_serving":0.5833,
+"recipes":27
+},
+"iceberg lettuce":{
+"g_per_serving":47.2,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":106
+},
+"idaho potatoes":{
+"g_per_serving":184.5,
+"unit":"large",
+"qty_per_serving":0.5,
+"recipes":32
+},
+"instant brown rice":{
+"g_per_serving":61.7,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":11
+},
+"instant garlic":{
+"g_per_serving":1.4,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":12
+},
+"instant mashed potatoes":{
+"g_per_serving":35.4,
+"unit":"cup",
+"qty_per_serving":0.2361,
+"recipes":12
+},
+"instant onion":{
+"g_per_serving":1.7,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":31
+},
+"instant rice":{
+"g_per_serving":31.7,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":61
+},
+"instant yeast":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.1615,
+"recipes":18
+},
+"israeli couscous":{
+"g_per_serving":39.3,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":8
+},
+"italian bread":{
+"g_per_serving":58.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":42
+},
+"italian parsley":{
+"g_per_serving":1.9,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":117
+},
+"italian salad dressing":{
+"g_per_serving":18.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":47
+},
+"italian sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":149
+},
+"italian sausages":{
+"g_per_serving":52.0,
+"unit":"oz",
+"qty_per_serving":1.5,
+"recipes":8
+},
+"italian tomatoes":{
+"g_per_serving":61.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":9
+},
+"italian turkey sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":17
+},
+"italian-style tomatoes":{
+"g_per_serving":57.6,
+"unit":"oz",
+"qty_per_serving":2.0625,
+"recipes":8
+},
+"jalapeno":{
+"g_per_serving":1.4,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":48
+},
+"jalapeno pepper":{
+"g_per_serving":0.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":45
+},
+"jalapeno peppers":{
+"g_per_serving":1.9,
+"unit":"tbsp",
+"qty_per_serving":0.375,
+"recipes":28
+},
+"jalapenos":{
+"g_per_serving":2.1,
+"unit":"tbsp",
+"qty_per_serving":0.4167,
+"recipes":19
+},
+"jam":{
+"g_per_serving":14.2,
+"unit":"tbsp",
+"qty_per_serving":1.0,
+"recipes":11
+},
+"jicama":{
+"g_per_serving":41.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":22
+},
+"jumbo shrimp":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":21
+},
+"kaiser rolls":{
+"g_per_serving":57.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":54
+},
+"kale":{
+"g_per_serving":41.6,
+"unit":"lb",
+"qty_per_serving":0.1771,
+"recipes":54
+},
+"ketchup":{
+"g_per_serving":15.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":688
+},
+"kidney bean":{
+"g_per_serving":46.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"kidney beans":{
+"g_per_serving":66.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":24
+},
+"kielbasa":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":64
+},
+"kiwi":{
+"g_per_serving":34.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":10
+},
+"kosher salt":{
+"g_per_serving":1.0,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":682
+},
+"kraft parmesan cheese":{
+"g_per_serving":12.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"lard":{
+"g_per_serving":6.4,
+"unit":"tbsp",
+"qty_per_serving":0.4375,
+"recipes":27
+},
+"lawry u s seasoned salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":26
+},
+"lean bacon":{
+"g_per_serving":28.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":23
+},
+"lean beef":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"lean ground beef":{
+"g_per_serving":94.5,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":835
+},
+"lean ground chicken":{
+"g_per_serving":106.7,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"lean ground lamb":{
+"g_per_serving":85.0,
+"unit":"lb",
+"qty_per_serving":0.1875,
+"recipes":16
+},
+"lean ground turkey":{
+"g_per_serving":94.5,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":80
+},
+"lean ham":{
+"g_per_serving":33.1,
+"unit":"lb",
+"qty_per_serving":0.0729,
+"recipes":8
+},
+"lean lamb":{
+"g_per_serving":116.7,
+"unit":"g",
+"qty_per_serving":125.0,
+"recipes":9
+},
+"lean pork":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":20
+},
+"leek":{
+"g_per_serving":15.8,
+"unit":"cup",
+"qty_per_serving":0.1458,
+"recipes":28
+},
+"leeks":{
+"g_per_serving":44.5,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":47
+},
+"leftover mashed potatoes":{
+"g_per_serving":50.0,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":8
+},
+"leg lamb":{
+"g_per_serving":302.4,
+"unit":"lb",
+"qty_per_serving":0.625,
+"recipes":13
+},
+"lemon":{
+"g_per_serving":14.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":971
+},
+"lemon juice":{
+"g_per_serving":5.1,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":2632
+},
+"lemon peel":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":82
+},
+"lemon pepper":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":101
+},
+"lemon zest":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":266
+},
+"lemons":{
+"g_per_serving":23.2,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":201
+},
+"lentils":{
+"g_per_serving":48.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":65
+},
+"lettuce":{
+"g_per_serving":20.6,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":232
+},
+"lettuce leaf":{
+"g_per_serving":4.8,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":10
+},
+"light brown sugar":{
+"g_per_serving":6.9,
+"unit":"cup",
+"qty_per_serving":0.0556,
+"recipes":221
+},
+"light butter":{
+"g_per_serving":7.0,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":15
+},
+"light cheddar cheese":{
+"g_per_serving":30.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":16
+},
+"light coconut milk":{
+"g_per_serving":49.4,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":48
+},
+"light corn syrup":{
+"g_per_serving":11.4,
+"unit":"cup",
+"qty_per_serving":0.0417,
+"recipes":31
+},
+"light cream":{
+"g_per_serving":40.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":118
+},
+"light cream cheese":{
+"g_per_serving":20.3,
+"unit":"oz",
+"qty_per_serving":0.6667,
+"recipes":34
+},
+"light mayonnaise":{
+"g_per_serving":13.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":130
+},
+"light olive oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.4167,
+"recipes":36
+},
+"light ricotta cheese":{
+"g_per_serving":56.7,
+"unit":"cup",
+"qty_per_serving":0.225,
+"recipes":9
+},
+"light sour cream":{
+"g_per_serving":21.6,
+"unit":"cup",
+"qty_per_serving":0.0885,
+"recipes":95
+},
+"light soy sauce":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":128
+},
+"lima beans":{
+"g_per_serving":39.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":12
+},
+"lime":{
+"g_per_serving":16.8,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":341
+},
+"lime juice":{
+"g_per_serving":7.6,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":991
+},
+"limes":{
+"g_per_serving":33.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":162
+},
+"liquid honey":{
+"g_per_serving":10.6,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":37
+},
+"lite olive oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":22
+},
+"long grain brown rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":22
+},
+"long grain rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":147
+},
+"long grain white rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":49
+},
+"long-grain rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":84
+},
+"long-grain white rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":67
+},
+"low fat cottage cheese":{
+"g_per_serving":43.9,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":8
+},
+"low sodium beef broth":{
+"g_per_serving":60.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":19
+},
+"low sodium chicken broth":{
+"g_per_serving":93.4,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":195
+},
+"low sodium soy sauce":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":188
+},
+"low sodium vegetable broth":{
+"g_per_serving":110.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":14
+},
+"low-fat buttermilk":{
+"g_per_serving":25.5,
+"unit":"cup",
+"qty_per_serving":0.1146,
+"recipes":49
+},
+"low-fat cheddar cheese":{
+"g_per_serving":22.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":121
+},
+"low-fat cheese":{
+"g_per_serving":33.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":22
+},
+"low-fat chicken broth":{
+"g_per_serving":72.6,
+"unit":"cup",
+"qty_per_serving":0.2708,
+"recipes":11
+},
+"low-fat cream cheese":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":29
+},
+"low-fat mayonnaise":{
+"g_per_serving":13.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":62
+},
+"low-fat milk":{
+"g_per_serving":49.8,
+"unit":"cup",
+"qty_per_serving":0.2396,
+"recipes":350
+},
+"low-fat plain yogurt":{
+"g_per_serving":30.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":41
+},
+"low-fat ricotta cheese":{
+"g_per_serving":49.6,
+"unit":"cup",
+"qty_per_serving":0.2,
+"recipes":21
+},
+"low-fat sour cream":{
+"g_per_serving":23.0,
+"unit":"cup",
+"qty_per_serving":0.1056,
+"recipes":68
+},
+"low-fat swiss cheese":{
+"g_per_serving":28.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":14
+},
+"low-fat vanilla yogurt":{
+"g_per_serving":61.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":27
+},
+"low-fat yogurt":{
+"g_per_serving":30.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":22
+},
+"low-sodium low-fat chicken broth":{
+"g_per_serving":93.4,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":10
+},
+"lowfat mozzarella cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":29
+},
+"lukewarm water":{
+"g_per_serving":29.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":9
+},
+"macadamia nuts":{
+"g_per_serving":20.5,
+"unit":"cup",
+"qty_per_serving":0.1458,
+"recipes":36
+},
+"macaroni":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":119
+},
+"madras curry powder":{
+"g_per_serving":1.2,
+"unit":"tbsp",
+"qty_per_serving":0.2917,
+"recipes":19
+},
+"malt vinegar":{
+"g_per_serving":7.4,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":13
+},
+"mandarin orange":{
+"g_per_serving":22.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":8
+},
+"mandarin oranges":{
+"g_per_serving":61.3,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":9
+},
+"mango":{
+"g_per_serving":82.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":82
+},
+"mango nectar":{
+"g_per_serving":85.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":9
+},
+"mangoes":{
+"g_per_serving":144.4,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":42
+},
+"maple syrup":{
+"g_per_serving":13.1,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":271
+},
+"marinara sauce":{
+"g_per_serving":89.8,
+"unit":"oz",
+"qty_per_serving":3.1667,
+"recipes":8
+},
+"mashed banana":{
+"g_per_serving":18.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":15
+},
+"mashed potatoes":{
+"g_per_serving":114.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":80
+},
+"mature cheddar cheese":{
+"g_per_serving":30.7,
+"unit":"g",
+"qty_per_serving":17.7083,
+"recipes":16
+},
+"mayonnaise":{
+"g_per_serving":18.3,
+"unit":"cup",
+"qty_per_serving":0.0938,
+"recipes":1528
+},
+"mexican blend cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":70
+},
+"mexican cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":25
+},
+"mexican chili powder":{
+"g_per_serving":1.5,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"mexican oregano":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":17
+},
+"mild cheddar cheese":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":59
+},
+"mild chili powder":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":13
+},
+"mild curry powder":{
+"g_per_serving":1.0,
+"unit":"tsp",
+"qty_per_serving":0.375,
+"recipes":12
+},
+"mild italian sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":16
+},
+"mild salsa":{
+"g_per_serving":35.1,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":16
+},
+"milk":{
+"g_per_serving":30.5,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":3466
+},
+"millet":{
+"g_per_serving":41.7,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":9
+},
+"mint":{
+"g_per_serving":2.9,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":241
+},
+"minute white rice":{
+"g_per_serving":69.4,
+"unit":"cup",
+"qty_per_serving":0.375,
+"recipes":11
+},
+"miso":{
+"g_per_serving":4.3,
+"unit":"tbsp",
+"qty_per_serving":0.375,
+"recipes":12
+},
+"mixed mushrooms":{
+"g_per_serving":31.1,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":29
+},
+"mixed nuts":{
+"g_per_serving":18.0,
+"unit":"cup",
+"qty_per_serving":0.1094,
+"recipes":15
+},
+"mixed vegetables":{
+"g_per_serving":71.1,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":8
+},
+"molasses":{
+"g_per_serving":7.0,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":123
+},
+"monterey jack cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":558
+},
+"mostaccioli pasta":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":10
+},
+"mozzarella cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":1241
+},
+"muenster cheese":{
+"g_per_serving":28.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":30
+},
+"multigrain bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":9
+},
+"mushroom":{
+"g_per_serving":17.5,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":352
+},
+"mushrooms":{
+"g_per_serving":28.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":966
+},
+"mustard":{
+"g_per_serving":0.9,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":724
+},
+"naan bread":{
+"g_per_serving":90.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":8
+},
+"napa cabbage":{
+"g_per_serving":81.8,
+"unit":"cup",
+"qty_per_serving":0.625,
+"recipes":20
+},
+"natural-style peanut butter":{
+"g_per_serving":16.1,
+"unit":"tbsp",
+"qty_per_serving":1.0,
+"recipes":24
+},
+"navel orange":{
+"g_per_serving":36.8,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":13
+},
+"navel oranges":{
+"g_per_serving":92.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":9
+},
+"navy beans":{
+"g_per_serving":64.8,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":9
+},
+"nectarines":{
+"g_per_serving":47.3,
+"unit":"medium",
+"qty_per_serving":0.3333,
+"recipes":8
+},
+"neufchatel cheese":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.0,
+"recipes":23
+},
+"new potato":{
+"g_per_serving":99.2,
+"unit":"lb",
+"qty_per_serving":0.2188,
+"recipes":16
+},
+"new potatoes":{
+"g_per_serving":212.6,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":81
+},
+"non-fat powdered milk":{
+"g_per_serving":5.7,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":9
+},
+"non-fat vanilla yogurt":{
+"g_per_serving":61.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":18
+},
+"nonfat milk":{
+"g_per_serving":39.4,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":123
+},
+"nonfat sour cream":{
+"g_per_serving":19.2,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":73
+},
+"nutmeg":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0417,
+"recipes":866
+},
+"nutritional yeast":{
+"g_per_serving":6.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":36
+},
+"oat bran":{
+"g_per_serving":6.3,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":42
+},
+"oat flour":{
+"g_per_serving":17.3,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":9
+},
+"oatmeal":{
+"g_per_serving":29.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":93
+},
+"oats":{
+"g_per_serving":24.3,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":71
+},
+"okra":{
+"g_per_serving":50.4,
+"unit":"lb",
+"qty_per_serving":0.1875,
+"recipes":27
+},
+"old cheddar cheese":{
+"g_per_serving":33.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":31
+},
+"old fashioned oats":{
+"g_per_serving":39.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":86
+},
+"old-fashioned oatmeal":{
+"g_per_serving":45.5,
+"unit":"cup",
+"qty_per_serving":0.2917,
+"recipes":12
+},
+"olive":{
+"g_per_serving":8.4,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":39
+},
+"olive oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":7690
+},
+"olives":{
+"g_per_serving":10.8,
+"unit":"count",
+"qty_per_serving":2.0,
+"recipes":36
+},
+"onion":{
+"g_per_serving":18.3,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":8030
+},
+"onion powder":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":553
+},
+"onion salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":62
+},
+"onions":{
+"g_per_serving":36.7,
+"unit":"medium",
+"qty_per_serving":0.3333,
+"recipes":1778
+},
+"orange":{
+"g_per_serving":46.0,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":129
+},
+"orange bell pepper":{
+"g_per_serving":20.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":32
+},
+"orange juice":{
+"g_per_serving":20.7,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":595
+},
+"orange marmalade":{
+"g_per_serving":20.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":80
+},
+"orange peel":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":43
+},
+"orange sherbet":{
+"g_per_serving":53.0,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":8
+},
+"orange zest":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.1667,
+"recipes":158
+},
+"oranges":{
+"g_per_serving":92.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":63
+},
+"oregano":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":802
+},
+"oriental sesame oil":{
+"g_per_serving":3.4,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":13
+},
+"original sauce":{
+"g_per_serving":9.1,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":31
+},
+"orzo pasta":{
+"g_per_serving":22.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":134
+},
+"oyster sauce":{
+"g_per_serving":9.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":116
+},
+"palm sugar":{
+"g_per_serving":3.6,
+"unit":"tbsp",
+"qty_per_serving":0.4375,
+"recipes":34
+},
+"panko breadcrumbs":{
+"g_per_serving":20.2,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":193
+},
+"papaya":{
+"g_per_serving":54.4,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":32
+},
+"paprika":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":1405
+},
+"parmesan cheese":{
+"g_per_serving":6.2,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":3061
+},
+"parsley":{
+"g_per_serving":1.9,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":2404
+},
+"parsnip":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":15
+},
+"parsnips":{
+"g_per_serving":150.0,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":31
+},
+"part-skim mozzarella cheese":{
+"g_per_serving":29.6,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":136
+},
+"part-skim ricotta cheese":{
+"g_per_serving":49.6,
+"unit":"cup",
+"qty_per_serving":0.1938,
+"recipes":63
+},
+"pasta":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":193
+},
+"pasta sauce":{
+"g_per_serving":99.2,
+"unit":"oz",
+"qty_per_serving":3.5,
+"recipes":15
+},
+"pastrami":{
+"g_per_serving":70.9,
+"unit":"oz",
+"qty_per_serving":2.5,
+"recipes":8
+},
+"peach":{
+"g_per_serving":75.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":19
+},
+"peaches":{
+"g_per_serving":87.5,
+"unit":"count",
+"qty_per_serving":0.6667,
+"recipes":41
+},
+"peanut butter":{
+"g_per_serving":16.1,
+"unit":"tbsp",
+"qty_per_serving":1.0,
+"recipes":213
+},
+"peanut oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":284
+},
+"peanuts":{
+"g_per_serving":9.1,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":93
+},
+"pear":{
+"g_per_serving":70.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":27
+},
+"pearl barley":{
+"g_per_serving":32.3,
+"unit":"cup",
+"qty_per_serving":0.1615,
+"recipes":56
+},
+"pears":{
+"g_per_serving":89.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":31
+},
+"peas":{
+"g_per_serving":24.2,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":127
+},
+"pecans":{
+"g_per_serving":6.8,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":367
+},
+"penne":{
+"g_per_serving":68.1,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":64
+},
+"penne pasta":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":174
+},
+"pepper":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":3803
+},
+"pepper sauce":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.0833,
+"recipes":200
+},
+"pepperoncini pepper":{
+"g_per_serving":6.9,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":11
+},
+"pepperoncini peppers":{
+"g_per_serving":3.5,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":9
+},
+"pesto sauce":{
+"g_per_serving":15.7,
+"unit":"tbsp",
+"qty_per_serving":0.75,
+"recipes":126
+},
+"pickle":{
+"g_per_serving":12.9,
+"unit":"count",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"pickle relish":{
+"g_per_serving":3.8,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":17
+},
+"pickled ginger":{
+"g_per_serving":2.0,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":9
+},
+"pickled jalapeno pepper":{
+"g_per_serving":3.4,
+"unit":"cup",
+"qty_per_serving":0.0417,
+"recipes":19
+},
+"pickled jalapeno peppers":{
+"g_per_serving":3.2,
+"unit":"count",
+"qty_per_serving":0.6667,
+"recipes":20
+},
+"pickles":{
+"g_per_serving":30.1,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":18
+},
+"pimentos":{
+"g_per_serving":6.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":17
+},
+"pine nuts":{
+"g_per_serving":8.4,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":289
+},
+"pineapple":{
+"g_per_serving":41.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":128
+},
+"pineapple juice":{
+"g_per_serving":31.2,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":114
+},
+"pinto beans":{
+"g_per_serving":62.6,
+"unit":"oz",
+"qty_per_serving":2.4167,
+"recipes":10
+},
+"pita bread":{
+"g_per_serving":60.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":60
+},
+"pita breads":{
+"g_per_serving":60.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":36
+},
+"pizza sauce":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":93
+},
+"plain fat-free yogurt":{
+"g_per_serving":30.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":49
+},
+"plain low-fat yogurt":{
+"g_per_serving":30.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":56
+},
+"plain yogurt":{
+"g_per_serving":35.4,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":276
+},
+"plum sauce":{
+"g_per_serving":22.9,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"plum tomato":{
+"g_per_serving":35.7,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":58
+},
+"plum tomatoes":{
+"g_per_serving":91.0,
+"unit":"count",
+"qty_per_serving":0.75,
+"recipes":184
+},
+"poblano pepper":{
+"g_per_serving":0.5,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":12
+},
+"poblano peppers":{
+"g_per_serving":1.4,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":19
+},
+"polish sausage":{
+"g_per_serving":106.7,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"pomegranate juice":{
+"g_per_serving":62.2,
+"unit":"cup",
+"qty_per_serving":0.3125,
+"recipes":12
+},
+"pork chops":{
+"g_per_serving":170.1,
+"unit":"lb",
+"qty_per_serving":0.3542,
+"recipes":15
+},
+"pork loin":{
+"g_per_serving":136.1,
+"unit":"lb",
+"qty_per_serving":0.3,
+"recipes":35
+},
+"pork sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":50
+},
+"pork tenderloin":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":143
+},
+"portabella mushroom":{
+"g_per_serving":21.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":32
+},
+"portabella mushrooms":{
+"g_per_serving":84.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":56
+},
+"potato":{
+"g_per_serving":61.5,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":304
+},
+"potatoes":{
+"g_per_serving":170.1,
+"unit":"medium",
+"qty_per_serving":0.8333,
+"recipes":1450
+},
+"powdered ginger":{
+"g_per_serving":0.3,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":15
+},
+"powdered milk":{
+"g_per_serving":13.6,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":19
+},
+"powdered sugar":{
+"g_per_serving":7.5,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":105
+},
+"prepared horseradish":{
+"g_per_serving":3.8,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":105
+},
+"prepared mustard":{
+"g_per_serving":1.9,
+"unit":"tsp",
+"qty_per_serving":0.1875,
+"recipes":216
+},
+"prepared salsa":{
+"g_per_serving":32.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":21
+},
+"prepared yellow mustard":{
+"g_per_serving":2.6,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":37
+},
+"preserved lemon":{
+"g_per_serving":9.7,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":18
+},
+"preserved lemons":{
+"g_per_serving":11.2,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":8
+},
+"process american cheese":{
+"g_per_serving":21.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":12
+},
+"provolone cheese":{
+"g_per_serving":28.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":195
+},
+"pumpernickel bread":{
+"g_per_serving":52.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":16
+},
+"pumpkin pie spice":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":57
+},
+"pumpkin seeds":{
+"g_per_serving":7.4,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":28
+},
+"pure maple syrup":{
+"g_per_serving":9.8,
+"unit":"cup",
+"qty_per_serving":0.0938,
+"recipes":66
+},
+"pure vanilla extract":{
+"g_per_serving":0.7,
+"unit":"tsp",
+"qty_per_serving":0.1339,
+"recipes":47
+},
+"purple onion":{
+"g_per_serving":17.5,
+"unit":"count",
+"qty_per_serving":0.1458,
+"recipes":33
+},
+"quick-cooking barley":{
+"g_per_serving":25.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":14
+},
+"quick-cooking oatmeal":{
+"g_per_serving":36.6,
+"unit":"cup",
+"qty_per_serving":0.2812,
+"recipes":16
+},
+"quinoa":{
+"g_per_serving":42.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":119
+},
+"radicchio":{
+"g_per_serving":9.0,
+"unit":"leaf",
+"qty_per_serving":1.25,
+"recipes":8
+},
+"radish":{
+"g_per_serving":14.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":24
+},
+"radishes":{
+"g_per_serving":4.5,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":38
+},
+"raisin bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":10
+},
+"raisins":{
+"g_per_serving":10.3,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":422
+},
+"ranch salad dressing":{
+"g_per_serving":20.0,
+"unit":"cup",
+"qty_per_serving":0.1,
+"recipes":19
+},
+"raspberries":{
+"g_per_serving":30.7,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":43
+},
+"raspberry":{
+"g_per_serving":20.5,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":12
+},
+"raspberry vinegar":{
+"g_per_serving":7.4,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":34
+},
+"raw honey":{
+"g_per_serving":7.1,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":10
+},
+"raw rice":{
+"g_per_serving":32.5,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":9
+},
+"raw shrimp":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":71
+},
+"raw sugar":{
+"g_per_serving":3.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"real butter":{
+"g_per_serving":17.3,
+"unit":"cup",
+"qty_per_serving":0.1125,
+"recipes":8
+},
+"real maple syrup":{
+"g_per_serving":9.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":13
+},
+"red apple":{
+"g_per_serving":22.8,
+"unit":"count",
+"qty_per_serving":0.1042,
+"recipes":12
+},
+"red apples":{
+"g_per_serving":91.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":10
+},
+"red bell pepper":{
+"g_per_serving":19.8,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":895
+},
+"red bell peppers":{
+"g_per_serving":39.7,
+"unit":"count",
+"qty_per_serving":0.3333,
+"recipes":164
+},
+"red cabbage":{
+"g_per_serving":22.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":31
+},
+"red chili pepper":{
+"g_per_serving":1.6,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"red chili powder":{
+"g_per_serving":0.7,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":65
+},
+"red kidney beans":{
+"g_per_serving":74.4,
+"unit":"cup",
+"qty_per_serving":0.2857,
+"recipes":18
+},
+"red leaf lettuce":{
+"g_per_serving":28.0,
+"unit":"head",
+"qty_per_serving":0.1667,
+"recipes":17
+},
+"red lentils":{
+"g_per_serving":42.5,
+"unit":"g",
+"qty_per_serving":46.875,
+"recipes":14
+},
+"red onion":{
+"g_per_serving":17.5,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":1053
+},
+"red onions":{
+"g_per_serving":28.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":203
+},
+"red pepper":{
+"g_per_serving":18.6,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":466
+},
+"red pepper flakes":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0833,
+"recipes":932
+},
+"red pepper sauce":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":33
+},
+"red peppers":{
+"g_per_serving":37.0,
+"unit":"count",
+"qty_per_serving":0.3333,
+"recipes":105
+},
+"red potato":{
+"g_per_serving":85.0,
+"unit":"lb",
+"qty_per_serving":0.1875,
+"recipes":18
+},
+"red potatoes":{
+"g_per_serving":170.1,
+"unit":"lb",
+"qty_per_serving":0.3333,
+"recipes":333
+},
+"red seedless grapes":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":22
+},
+"red sweet bell pepper":{
+"g_per_serving":19.8,
+"unit":"count",
+"qty_per_serving":0.2083,
+"recipes":17
+},
+"reduced sodium soy sauce":{
+"g_per_serving":7.3,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":93
+},
+"reduced-calorie mayonnaise":{
+"g_per_serving":14.4,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":11
+},
+"reduced-fat cheddar cheese":{
+"g_per_serving":16.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":45
+},
+"reduced-fat cream cheese":{
+"g_per_serving":14.5,
+"unit":"oz",
+"qty_per_serving":0.8333,
+"recipes":32
+},
+"reduced-fat feta cheese":{
+"g_per_serving":18.8,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":21
+},
+"reduced-fat mayonnaise":{
+"g_per_serving":10.9,
+"unit":"cup",
+"qty_per_serving":0.0729,
+"recipes":29
+},
+"reduced-fat milk":{
+"g_per_serving":61.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":15
+},
+"reduced-fat monterey jack cheese":{
+"g_per_serving":16.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":15
+},
+"reduced-fat mozzarella cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":15
+},
+"reduced-fat peanut butter":{
+"g_per_serving":13.5,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":8
+},
+"reduced-fat sharp cheddar cheese":{
+"g_per_serving":22.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":19
+},
+"reduced-fat sour cream":{
+"g_per_serving":14.4,
+"unit":"cup",
+"qty_per_serving":0.0938,
+"recipes":51
+},
+"reduced-fat swiss cheese":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1562,
+"recipes":9
+},
+"reduced-sodium chicken broth":{
+"g_per_serving":74.7,
+"unit":"cup",
+"qty_per_serving":0.2708,
+"recipes":92
+},
+"reduced-sodium fat-free chicken broth":{
+"g_per_serving":44.1,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":34
+},
+"refried beans":{
+"g_per_serving":60.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":43
+},
+"rhubarb":{
+"g_per_serving":48.8,
+"unit":"cup",
+"qty_per_serving":0.3,
+"recipes":10
+},
+"rice":{
+"g_per_serving":23.6,
+"unit":"oz",
+"qty_per_serving":2.25,
+"recipes":10
+},
+"rice flour":{
+"g_per_serving":10.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":24
+},
+"rice milk":{
+"g_per_serving":61.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"rice noodles":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":45
+},
+"rice vinegar":{
+"g_per_serving":7.4,
+"unit":"tbsp",
+"qty_per_serving":0.375,
+"recipes":280
+},
+"ricotta cheese":{
+"g_per_serving":46.5,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":233
+},
+"rigatoni pasta":{
+"g_per_serving":56.8,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":46
+},
+"rindless bacon":{
+"g_per_serving":46.9,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":10
+},
+"ripe banana":{
+"g_per_serving":44.2,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":53
+},
+"ripe bananas":{
+"g_per_serving":44.2,
+"unit":"count",
+"qty_per_serving":0.375,
+"recipes":51
+},
+"ripe mango":{
+"g_per_serving":84.0,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":10
+},
+"ripe olives":{
+"g_per_serving":8.4,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":64
+},
+"ripe plum tomatoes":{
+"g_per_serving":137.1,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":10
+},
+"ripe tomatoes":{
+"g_per_serving":91.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":131
+},
+"roast beef":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":23
+},
+"roasted garlic":{
+"g_per_serving":2.1,
+"unit":"tbsp",
+"qty_per_serving":0.4167,
+"recipes":11
+},
+"roasted peanuts":{
+"g_per_serving":9.2,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":49
+},
+"roasted red pepper":{
+"g_per_serving":6.9,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":77
+},
+"roasted red peppers":{
+"g_per_serving":4.3,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":43
+},
+"roasted salted peanut":{
+"g_per_serving":12.9,
+"unit":"cup",
+"qty_per_serving":0.0885,
+"recipes":8
+},
+"roasted sunflower seeds":{
+"g_per_serving":7.2,
+"unit":"cup",
+"qty_per_serving":0.05,
+"recipes":8
+},
+"roasting chickens":{
+"g_per_serving":340.2,
+"unit":"lb",
+"qty_per_serving":0.75,
+"recipes":16
+},
+"rolled oats":{
+"g_per_serving":30.3,
+"unit":"cup",
+"qty_per_serving":0.2196,
+"recipes":167
+},
+"roma tomato":{
+"g_per_serving":41.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":55
+},
+"roma tomatoes":{
+"g_per_serving":83.5,
+"unit":"count",
+"qty_per_serving":0.625,
+"recipes":138
+},
+"romaine lettuce":{
+"g_per_serving":47.0,
+"unit":"cup",
+"qty_per_serving":1.0,
+"recipes":154
+},
+"romano cheese":{
+"g_per_serving":10.6,
+"unit":"oz",
+"qty_per_serving":0.3542,
+"recipes":9
+},
+"rose water":{
+"g_per_serving":4.9,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":17
+},
+"rosemary":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":436
+},
+"rotel tomatoes":{
+"g_per_serving":47.2,
+"unit":"oz",
+"qty_per_serving":1.75,
+"recipes":9
+},
+"rotini pasta":{
+"g_per_serving":45.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":47
+},
+"russet potato":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":31
+},
+"russet potatoes":{
+"g_per_serving":173.0,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":215
+},
+"rutabaga":{
+"g_per_serving":52.5,
+"unit":"small",
+"qty_per_serving":0.25,
+"recipes":12
+},
+"rutabagas":{
+"g_per_serving":64.3,
+"unit":"cup",
+"qty_per_serving":0.2917,
+"recipes":11
+},
+"rye bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":54
+},
+"rye flour":{
+"g_per_serving":10.7,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":9
+},
+"safflower oil":{
+"g_per_serving":3.4,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"salad dressing":{
+"g_per_serving":18.1,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":16
+},
+"salad oil":{
+"g_per_serving":6.8,
+"unit":"cup",
+"qty_per_serving":0.0556,
+"recipes":41
+},
+"salami":{
+"g_per_serving":18.9,
+"unit":"lb",
+"qty_per_serving":0.0625,
+"recipes":17
+},
+"salmon":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.2812,
+"recipes":36
+},
+"salmon fillet":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.3125,
+"recipes":37
+},
+"salmon fillets":{
+"g_per_serving":396.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":318
+},
+"salsa":{
+"g_per_serving":32.5,
+"unit":"cup",
+"qty_per_serving":0.1339,
+"recipes":447
+},
+"salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":10003
+},
+"salt pork":{
+"g_per_serving":18.9,
+"unit":"lb",
+"qty_per_serving":0.0486,
+"recipes":11
+},
+"salt u black pepper":{
+"g_per_serving":0.0,
+"unit":"pinch",
+"qty_per_serving":0.25,
+"recipes":15
+},
+"salt u pepper":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":12
+},
+"salted butter":{
+"g_per_serving":12.6,
+"unit":"tbsp",
+"qty_per_serving":0.7083,
+"recipes":37
+},
+"salted peanuts":{
+"g_per_serving":15.2,
+"unit":"cup",
+"qty_per_serving":0.1042,
+"recipes":18
+},
+"saltine crackers":{
+"g_per_serving":20.0,
+"unit":"count",
+"qty_per_serving":3.6667,
+"recipes":47
+},
+"sandwich bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":24
+},
+"sauerkraut":{
+"g_per_serving":47.3,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":79
+},
+"savoy cabbage":{
+"g_per_serving":86.3,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":12
+},
+"scotch bonnet pepper":{
+"g_per_serving":0.7,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":16
+},
+"scotch bonnet peppers":{
+"g_per_serving":0.5,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":10
+},
+"sea salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":318
+},
+"season salt":{
+"g_per_serving":0.8,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":19
+},
+"season-all salt":{
+"g_per_serving":1.5,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":11
+},
+"seasoned croutons":{
+"g_per_serving":10.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":22
+},
+"seasoned pepper":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.0729,
+"recipes":14
+},
+"seasoned rice vinegar":{
+"g_per_serving":6.2,
+"unit":"tbsp",
+"qty_per_serving":0.4167,
+"recipes":24
+},
+"seasoning salt":{
+"g_per_serving":1.0,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":398
+},
+"seedless grapes":{
+"g_per_serving":37.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":16
+},
+"semolina":{
+"g_per_serving":29.5,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":8
+},
+"sesame oil":{
+"g_per_serving":2.3,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":507
+},
+"sesame seeds":{
+"g_per_serving":3.0,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":273
+},
+"shallot":{
+"g_per_serving":10.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":109
+},
+"shallots":{
+"g_per_serving":5.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":92
+},
+"sharp cheddar cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.2,
+"recipes":516
+},
+"sharp white cheddar cheese":{
+"g_per_serving":30.7,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"shaved parmesan cheese":{
+"g_per_serving":12.5,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":13
+},
+"shell pasta":{
+"g_per_serving":30.3,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":54
+},
+"shiitake mushroom":{
+"g_per_serving":28.3,
+"unit":"lb",
+"qty_per_serving":0.0625,
+"recipes":9
+},
+"shiitake mushrooms":{
+"g_per_serving":40.3,
+"unit":"oz",
+"qty_per_serving":1.5,
+"recipes":40
+},
+"short-grain rice":{
+"g_per_serving":53.3,
+"unit":"cup",
+"qty_per_serving":0.2917,
+"recipes":14
+},
+"shrimp":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":556
+},
+"single cream":{
+"g_per_serving":27.7,
+"unit":"tbsp",
+"qty_per_serving":0.625,
+"recipes":22
+},
+"skim milk":{
+"g_per_serving":45.9,
+"unit":"cup",
+"qty_per_serving":0.2083,
+"recipes":390
+},
+"skinless chicken":{
+"g_per_serving":226.8,
+"unit":"lb",
+"qty_per_serving":0.5,
+"recipes":36
+},
+"skinless chicken breast":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"skinless chicken breasts":{
+"g_per_serving":272.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":56
+},
+"skinless chicken thighs":{
+"g_per_serving":264.6,
+"unit":"count",
+"qty_per_serving":2.0,
+"recipes":37
+},
+"skinless salmon fillet":{
+"g_per_serving":151.2,
+"unit":"lb",
+"qty_per_serving":0.3333,
+"recipes":12
+},
+"skinless salmon fillets":{
+"g_per_serving":396.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":11
+},
+"slivered almonds":{
+"g_per_serving":8.9,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":124
+},
+"smoked bacon":{
+"g_per_serving":37.8,
+"unit":"slice",
+"qty_per_serving":1.5,
+"recipes":31
+},
+"smoked cheddar cheese":{
+"g_per_serving":26.5,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":10
+},
+"smoked ham":{
+"g_per_serving":50.8,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":22
+},
+"smoked mozzarella cheese":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.125,
+"recipes":13
+},
+"smoked paprika":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.1875,
+"recipes":84
+},
+"smoked salmon":{
+"g_per_serving":42.5,
+"unit":"oz",
+"qty_per_serving":1.1458,
+"recipes":77
+},
+"smoked sausage":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":72
+},
+"smoked turkey":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":17
+},
+"smooth peanut butter":{
+"g_per_serving":13.5,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":31
+},
+"snipped basil":{
+"g_per_serving":0.6,
+"unit":"tbsp",
+"qty_per_serving":0.4167,
+"recipes":18
+},
+"snipped cilantro":{
+"g_per_serving":0.3,
+"unit":"cup",
+"qty_per_serving":0.0417,
+"recipes":11
+},
+"snipped parsley":{
+"g_per_serving":1.3,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":23
+},
+"soba noodles":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":1.5,
+"recipes":13
+},
+"soft brown sugar":{
+"g_per_serving":2.3,
+"unit":"tsp",
+"qty_per_serving":0.375,
+"recipes":9
+},
+"soft butter":{
+"g_per_serving":7.1,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":28
+},
+"soft goat cheese":{
+"g_per_serving":22.0,
+"unit":"oz",
+"qty_per_serving":0.75,
+"recipes":20
+},
+"soft taco-size flour tortillas":{
+"g_per_serving":70.0,
+"unit":"count",
+"qty_per_serving":1.4583,
+"recipes":10
+},
+"sour cream":{
+"g_per_serving":28.3,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":1487
+},
+"sourdough bread":{
+"g_per_serving":278.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":81
+},
+"soy milk":{
+"g_per_serving":60.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":73
+},
+"soy sauce":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":1509
+},
+"spaghetti":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":247
+},
+"spaghetti sauce":{
+"g_per_serving":118.1,
+"unit":"oz",
+"qty_per_serving":4.3333,
+"recipes":28
+},
+"spanish onion":{
+"g_per_serving":25.0,
+"unit":"large",
+"qty_per_serving":0.1667,
+"recipes":33
+},
+"spanish onions":{
+"g_per_serving":55.0,
+"unit":"large",
+"qty_per_serving":0.5,
+"recipes":9
+},
+"spanish paprika":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"spicy brown mustard":{
+"g_per_serving":3.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":49
+},
+"spicy mustard":{
+"g_per_serving":3.2,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"spinach":{
+"g_per_serving":30.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":417
+},
+"spiral shaped pasta":{
+"g_per_serving":37.9,
+"unit":"g",
+"qty_per_serving":43.75,
+"recipes":12
+},
+"split peas":{
+"g_per_serving":49.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":19
+},
+"squeezed lemon juice":{
+"g_per_serving":5.4,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":22
+},
+"squeezed lime juice":{
+"g_per_serving":7.6,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":24
+},
+"squeezed orange juice":{
+"g_per_serving":22.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":18
+},
+"sriracha sauce":{
+"g_per_serving":4.9,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":35
+},
+"stalk celery":{
+"g_per_serving":11.7,
+"unit":"large",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"steak sauce":{
+"g_per_serving":6.4,
+"unit":"tbsp",
+"qty_per_serving":0.3542,
+"recipes":43
+},
+"stewed tomatoes":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.5,
+"recipes":25
+},
+"stick margarine":{
+"g_per_serving":6.5,
+"unit":"tbsp",
+"qty_per_serving":0.4583,
+"recipes":8
+},
+"strawberries":{
+"g_per_serving":50.7,
+"unit":"cup",
+"qty_per_serving":0.4,
+"recipes":176
+},
+"strawberry":{
+"g_per_serving":38.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":73
+},
+"strawberry yogurt":{
+"g_per_serving":86.8,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":10
+},
+"streaky bacon":{
+"g_per_serving":31.7,
+"unit":"slice",
+"qty_per_serving":1.25,
+"recipes":12
+},
+"sugar":{
+"g_per_serving":3.1,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":2578
+},
+"summer squash":{
+"g_per_serving":94.1,
+"unit":"cup",
+"qty_per_serving":0.6667,
+"recipes":14
+},
+"sun-dried tomato":{
+"g_per_serving":4.5,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":88
+},
+"sun-dried tomato paste":{
+"g_per_serving":12.4,
+"unit":"tbsp",
+"qty_per_serving":0.75,
+"recipes":10
+},
+"sun-dried tomatoes":{
+"g_per_serving":3.4,
+"unit":"count",
+"qty_per_serving":1.8333,
+"recipes":78
+},
+"sunflower oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":73
+},
+"sunflower seeds":{
+"g_per_serving":1.9,
+"unit":"cup",
+"qty_per_serving":0.0417,
+"recipes":88
+},
+"sweet basil":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":16
+},
+"sweet butter":{
+"g_per_serving":11.8,
+"unit":"tbsp",
+"qty_per_serving":0.6667,
+"recipes":10
+},
+"sweet corn":{
+"g_per_serving":36.2,
+"unit":"cup",
+"qty_per_serving":0.1875,
+"recipes":16
+},
+"sweet green pepper":{
+"g_per_serving":18.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":25
+},
+"sweet hungarian paprika":{
+"g_per_serving":1.0,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":22
+},
+"sweet italian sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":21
+},
+"sweet paprika":{
+"g_per_serving":0.6,
+"unit":"tsp",
+"qty_per_serving":0.25,
+"recipes":111
+},
+"sweet pickle relish":{
+"g_per_serving":5.7,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":83
+},
+"sweet potato":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":37
+},
+"sweet potatoes":{
+"g_per_serving":120.0,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":129
+},
+"sweet red pepper":{
+"g_per_serving":18.6,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":129
+},
+"sweet red peppers":{
+"g_per_serving":37.3,
+"unit":"count",
+"qty_per_serving":0.4167,
+"recipes":23
+},
+"sweet sour sauce":{
+"g_per_serving":23.3,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":8
+},
+"sweetened condensed milk":{
+"g_per_serving":19.1,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":12
+},
+"swiss chard":{
+"g_per_serving":56.3,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":34
+},
+"swiss cheese":{
+"g_per_serving":28.0,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":532
+},
+"table salt":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.0833,
+"recipes":66
+},
+"taco seasoning mix":{
+"g_per_serving":2.9,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":39
+},
+"taco shells":{
+"g_per_serving":23.3,
+"unit":"count",
+"qty_per_serving":1.75,
+"recipes":27
+},
+"tamari soy sauce":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":17
+},
+"tarragon vinegar":{
+"g_per_serving":5.0,
+"unit":"tbsp",
+"qty_per_serving":0.2917,
+"recipes":16
+},
+"tart apple":{
+"g_per_serving":37.2,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":19
+},
+"tart apples":{
+"g_per_serving":91.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":26
+},
+"tartar sauce":{
+"g_per_serving":17.5,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":8
+},
+"tempeh":{
+"g_per_serving":75.0,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":11
+},
+"teriyaki sauce":{
+"g_per_serving":18.0,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":106
+},
+"texas toast bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":14
+},
+"thai basil":{
+"g_per_serving":3.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":28
+},
+"thick-cut bacon":{
+"g_per_serving":56.0,
+"unit":"slice",
+"qty_per_serving":1.25,
+"recipes":13
+},
+"thyme":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":762
+},
+"tiny new potatoes":{
+"g_per_serving":151.2,
+"unit":"lb",
+"qty_per_serving":0.3542,
+"recipes":17
+},
+"toasted almond":{
+"g_per_serving":11.9,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":11
+},
+"toasted almonds":{
+"g_per_serving":7.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":26
+},
+"toasted bread":{
+"g_per_serving":37.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":11
+},
+"toasted sesame oil":{
+"g_per_serving":2.3,
+"unit":"tsp",
+"qty_per_serving":0.2917,
+"recipes":76
+},
+"toasted slivered almonds":{
+"g_per_serving":8.9,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":13
+},
+"toasted walnuts":{
+"g_per_serving":7.3,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":19
+},
+"tofu":{
+"g_per_serving":75.6,
+"unit":"oz",
+"qty_per_serving":3.5,
+"recipes":21
+},
+"tomatillo":{
+"g_per_serving":51.0,
+"unit":"lb",
+"qty_per_serving":0.1875,
+"recipes":8
+},
+"tomatillos":{
+"g_per_serving":51.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":27
+},
+"tomato":{
+"g_per_serving":24.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":175
+},
+"tomato juice":{
+"g_per_serving":67.8,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":98
+},
+"tomato ketchup":{
+"g_per_serving":15.0,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":24
+},
+"tomato paste":{
+"g_per_serving":8.3,
+"unit":"tbsp",
+"qty_per_serving":0.375,
+"recipes":497
+},
+"tomato puree":{
+"g_per_serving":10.4,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":95
+},
+"tomato sauce":{
+"g_per_serving":40.8,
+"unit":"cup",
+"qty_per_serving":0.1667,
+"recipes":357
+},
+"tomatoes":{
+"g_per_serving":61.5,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":2292
+},
+"tomatoes with juice":{
+"g_per_serving":72.7,
+"unit":"oz",
+"qty_per_serving":2.375,
+"recipes":10
+},
+"tortellini":{
+"g_per_serving":75.6,
+"unit":"lb",
+"qty_per_serving":0.2083,
+"recipes":9
+},
+"tortilla":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":15
+},
+"tortilla chips":{
+"g_per_serving":33.7,
+"unit":"oz",
+"qty_per_serving":1.0833,
+"recipes":27
+},
+"tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":62
+},
+"tuna":{
+"g_per_serving":85.0,
+"unit":"oz",
+"qty_per_serving":1.8125,
+"recipes":25
+},
+"tuna in water":{
+"g_per_serving":68.3,
+"unit":"oz",
+"qty_per_serving":1.6708,
+"recipes":18
+},
+"turbinado sugar":{
+"g_per_serving":8.4,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":9
+},
+"turkey bacon":{
+"g_per_serving":16.0,
+"unit":"slice",
+"qty_per_serving":1.0,
+"recipes":37
+},
+"turkey breast":{
+"g_per_serving":80.3,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":36
+},
+"turkey kielbasa":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":1.5,
+"recipes":9
+},
+"turkey sausage":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.1458,
+"recipes":17
+},
+"turmeric":{
+"g_per_serving":0.4,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":683
+},
+"u chunky salsa":{
+"g_per_serving":37.9,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":18
+},
+"unbleached all-purpose flour":{
+"g_per_serving":25.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":39
+},
+"unpeeled shrimp":{
+"g_per_serving":181.4,
+"unit":"lb",
+"qty_per_serving":0.4,
+"recipes":10
+},
+"unsalted butter":{
+"g_per_serving":7.1,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":901
+},
+"unsalted chicken stock":{
+"g_per_serving":85.0,
+"unit":"cup",
+"qty_per_serving":0.3542,
+"recipes":8
+},
+"unsalted peanuts":{
+"g_per_serving":12.2,
+"unit":"cup",
+"qty_per_serving":0.1458,
+"recipes":11
+},
+"unsalted roasted peanuts":{
+"g_per_serving":11.4,
+"unit":"cup",
+"qty_per_serving":0.0938,
+"recipes":10
+},
+"unsweetened apple juice":{
+"g_per_serving":31.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":12
+},
+"unsweetened applesauce":{
+"g_per_serving":20.3,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":55
+},
+"unsweetened cocoa powder":{
+"g_per_serving":1.8,
+"unit":"tbsp",
+"qty_per_serving":0.375,
+"recipes":20
+},
+"unsweetened coconut milk":{
+"g_per_serving":56.5,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":35
+},
+"unsweetened pineapple juice":{
+"g_per_serving":20.9,
+"unit":"cup",
+"qty_per_serving":0.0885,
+"recipes":12
+},
+"v vegetable juice":{
+"g_per_serving":74.0,
+"unit":"cup",
+"qty_per_serving":0.3,
+"recipes":12
+},
+"vanilla":{
+"g_per_serving":0.5,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":403
+},
+"vanilla extract":{
+"g_per_serving":0.7,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":383
+},
+"vanilla frozen yogurt":{
+"g_per_serving":72.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":10
+},
+"vanilla yogurt":{
+"g_per_serving":85.0,
+"unit":"oz",
+"qty_per_serving":3.0,
+"recipes":12
+},
+"vegan mayonnaise":{
+"g_per_serving":27.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":8
+},
+"vegetable broth":{
+"g_per_serving":92.1,
+"unit":"cup",
+"qty_per_serving":0.4167,
+"recipes":225
+},
+"vegetable juice":{
+"g_per_serving":89.7,
+"unit":"cup",
+"qty_per_serving":0.4167,
+"recipes":11
+},
+"vegetable oil":{
+"g_per_serving":5.5,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":3508
+},
+"vegetable shortening":{
+"g_per_serving":10.8,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":18
+},
+"vegetable stock":{
+"g_per_serving":110.5,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":236
+},
+"vermicelli":{
+"g_per_serving":28.3,
+"unit":"oz",
+"qty_per_serving":1.625,
+"recipes":29
+},
+"vidalia onion":{
+"g_per_serving":20.0,
+"unit":"count",
+"qty_per_serving":0.2083,
+"recipes":51
+},
+"vidalia onions":{
+"g_per_serving":55.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":30
+},
+"vine-ripened tomatoes":{
+"g_per_serving":91.0,
+"unit":"count",
+"qty_per_serving":0.625,
+"recipes":13
+},
+"vinegar":{
+"g_per_serving":5.0,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":391
+},
+"virgin olive oil":{
+"g_per_serving":10.1,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":31
+},
+"walnut":{
+"g_per_serving":9.8,
+"unit":"cup",
+"qty_per_serving":0.1042,
+"recipes":25
+},
+"walnut oil":{
+"g_per_serving":6.8,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":19
+},
+"walnuts":{
+"g_per_serving":7.3,
+"unit":"cup",
+"qty_per_serving":0.0625,
+"recipes":375
+},
+"water":{
+"g_per_serving":44.4,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":5110
+},
+"watercress":{
+"g_per_serving":17.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":14
+},
+"watermelon":{
+"g_per_serving":77.0,
+"unit":"cup",
+"qty_per_serving":0.5,
+"recipes":12
+},
+"waxy potatoes":{
+"g_per_serving":170.1,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":15
+},
+"wheat bran":{
+"g_per_serving":3.6,
+"unit":"cup",
+"qty_per_serving":0.059,
+"recipes":21
+},
+"wheat flour":{
+"g_per_serving":14.0,
+"unit":"cup",
+"qty_per_serving":0.1024,
+"recipes":18
+},
+"wheat germ":{
+"g_per_serving":4.8,
+"unit":"cup",
+"qty_per_serving":0.0417,
+"recipes":82
+},
+"whipping cream":{
+"g_per_serving":15.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":242
+},
+"white balsamic vinegar":{
+"g_per_serving":8.0,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":15
+},
+"white basmati rice":{
+"g_per_serving":61.7,
+"unit":"cup",
+"qty_per_serving":0.3333,
+"recipes":11
+},
+"white beans":{
+"g_per_serving":64.0,
+"unit":"cup",
+"qty_per_serving":0.275,
+"recipes":14
+},
+"white bread":{
+"g_per_serving":50.4,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":228
+},
+"white button mushrooms":{
+"g_per_serving":36.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":23
+},
+"white cheddar cheese":{
+"g_per_serving":16.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":29
+},
+"white corn tortillas":{
+"g_per_serving":48.0,
+"unit":"count",
+"qty_per_serving":2.0,
+"recipes":10
+},
+"white mushroom":{
+"g_per_serving":35.0,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":21
+},
+"white mushrooms":{
+"g_per_serving":45.4,
+"unit":"oz",
+"qty_per_serving":1.6,
+"recipes":40
+},
+"white onion":{
+"g_per_serving":17.5,
+"unit":"cup",
+"qty_per_serving":0.0833,
+"recipes":274
+},
+"white onions":{
+"g_per_serving":36.7,
+"unit":"count",
+"qty_per_serving":0.4375,
+"recipes":54
+},
+"white pearl onions":{
+"g_per_serving":222.5,
+"unit":"count",
+"qty_per_serving":2.5,
+"recipes":8
+},
+"white pepper":{
+"g_per_serving":0.1,
+"unit":"tsp",
+"qty_per_serving":0.0625,
+"recipes":374
+},
+"white potato":{
+"g_per_serving":49.7,
+"unit":"lb",
+"qty_per_serving":0.1667,
+"recipes":12
+},
+"white potatoes":{
+"g_per_serving":177.5,
+"unit":"count",
+"qty_per_serving":0.75,
+"recipes":43
+},
+"white rice":{
+"g_per_serving":46.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":104
+},
+"white vinegar":{
+"g_per_serving":5.8,
+"unit":"tbsp",
+"qty_per_serving":0.3333,
+"recipes":240
+},
+"whole almonds":{
+"g_per_serving":25.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":9
+},
+"whole boneless skinless chicken breasts":{
+"g_per_serving":136.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":8
+},
+"whole canned tomatoes":{
+"g_per_serving":99.3,
+"unit":"oz",
+"qty_per_serving":3.6875,
+"recipes":9
+},
+"whole chicken breasts":{
+"g_per_serving":136.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":12
+},
+"whole chickens":{
+"g_per_serving":307.1,
+"unit":"lb",
+"qty_per_serving":0.6458,
+"recipes":20
+},
+"whole cumin seed":{
+"g_per_serving":0.2,
+"unit":"tsp",
+"qty_per_serving":0.125,
+"recipes":12
+},
+"whole egg":{
+"g_per_serving":12.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":11
+},
+"whole egg mayonnaise":{
+"g_per_serving":11.5,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":8
+},
+"whole eggs":{
+"g_per_serving":25.0,
+"unit":"count",
+"qty_per_serving":0.5,
+"recipes":18
+},
+"whole garlic cloves":{
+"g_per_serving":4.0,
+"unit":"count",
+"qty_per_serving":1.3333,
+"recipes":11
+},
+"whole grain bread":{
+"g_per_serving":52.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":36
+},
+"whole grain dijon mustard":{
+"g_per_serving":6.5,
+"unit":"tbsp",
+"qty_per_serving":0.5,
+"recipes":10
+},
+"whole grain mustard":{
+"g_per_serving":3.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":37
+},
+"whole kernel corn":{
+"g_per_serving":35.2,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":21
+},
+"whole milk":{
+"g_per_serving":61.0,
+"unit":"cup",
+"qty_per_serving":0.25,
+"recipes":220
+},
+"whole tomatoes":{
+"g_per_serving":73.9,
+"unit":"oz",
+"qty_per_serving":2.5,
+"recipes":10
+},
+"whole wheat bread":{
+"g_per_serving":64.0,
+"unit":"slice",
+"qty_per_serving":2.0,
+"recipes":156
+},
+"whole wheat flour":{
+"g_per_serving":11.3,
+"unit":"cup",
+"qty_per_serving":0.1111,
+"recipes":238
+},
+"whole wheat pasta":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":20
+},
+"whole wheat penne":{
+"g_per_serving":75.3,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":16
+},
+"whole wheat pita bread":{
+"g_per_serving":64.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":38
+},
+"whole wheat spaghetti":{
+"g_per_serving":56.7,
+"unit":"oz",
+"qty_per_serving":2.0,
+"recipes":24
+},
+"whole wheat tortilla":{
+"g_per_serving":41.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":10
+},
+"whole wheat tortillas":{
+"g_per_serving":41.0,
+"unit":"count",
+"qty_per_serving":1.0,
+"recipes":45
+},
+"wild rice":{
+"g_per_serving":20.0,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":47
+},
+"worcestershire sauce":{
+"g_per_serving":2.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":1301
+},
+"yams":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":10
+},
+"yeast":{
+"g_per_serving":0.9,
+"unit":"tsp",
+"qty_per_serving":0.1875,
+"recipes":53
+},
+"yellow bell pepper":{
+"g_per_serving":19.8,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":144
+},
+"yellow bell peppers":{
+"g_per_serving":44.6,
+"unit":"count",
+"qty_per_serving":0.375,
+"recipes":20
+},
+"yellow mustard":{
+"g_per_serving":3.9,
+"unit":"tbsp",
+"qty_per_serving":0.25,
+"recipes":98
+},
+"yellow onion":{
+"g_per_serving":18.8,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":412
+},
+"yellow onions":{
+"g_per_serving":38.8,
+"unit":"cup",
+"qty_per_serving":0.2188,
+"recipes":108
+},
+"yellow pepper":{
+"g_per_serving":46.5,
+"unit":"count",
+"qty_per_serving":0.25,
+"recipes":56
+},
+"yellow sweet onion":{
+"g_per_serving":18.3,
+"unit":"count",
+"qty_per_serving":0.1667,
+"recipes":11
+},
+"yellow zucchini":{
+"g_per_serving":44.7,
+"unit":"large",
+"qty_per_serving":0.25,
+"recipes":8
+},
+"yogurt":{
+"g_per_serving":30.6,
+"unit":"cup",
+"qty_per_serving":0.125,
+"recipes":89
+},
+"yukon gold potato":{
+"g_per_serving":113.4,
+"unit":"lb",
+"qty_per_serving":0.25,
+"recipes":14
+},
+"yukon gold potatoes":{
+"g_per_serving":170.1,
+"unit":"lb",
+"qty_per_serving":0.375,
+"recipes":106
+},
+"ziti pasta":{
+"g_per_serving":56.7,
+"unit":"lb",
+"qty_per_serving":0.125,
+"recipes":58
+},
+"zucchini":{
+"g_per_serving":49.3,
+"unit":"count",
+"qty_per_serving":0.3333,
+"recipes":778
+}
+}
+}

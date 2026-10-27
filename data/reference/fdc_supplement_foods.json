@@ -1,0 +1,17 @@
+{
+  "_about": "Ingredients that are missing from USDA SR Legacy but common in Indian and sports-nutrition meal plans. Values are per 100 g, copied from USDA FoodData Central (https://fdc.nal.usda.gov, public domain / CC0). FNDDS (survey) records are preferred; Branded records are manufacturer label data and are marked as such. Retrieved 2026-10-22 through the FoodData Central search.",
+  "foods": [
+    {"fdc_id": 2705740, "data_type": "Survey (FNDDS)", "description": "Cheese, paneer", "aliases": ["paneer", "paneer cheese", "cottage cheese (paneer)", "panir"], "kcal": 299, "protein": 15.86, "fat": 15.52, "carbs": 22.46, "fiber": 0},
+    {"fdc_id": 2707451, "data_type": "Survey (FNDDS)", "description": "Textured vegetable protein, dry", "aliases": ["textured vegetable protein", "tvp", "soya chunks", "soy chunks", "soya nuggets", "soya granules"], "kcal": 366, "protein": 51.1, "fat": 3.33, "carbs": 32.9, "fiber": 17.5},
+    {"fdc_id": 2710731, "data_type": "Survey (FNDDS)", "description": "Nutritional powder mix (EAS Whey Protein Powder)", "aliases": ["whey protein", "whey protein powder", "protein powder"], "kcal": 385, "protein": 66.67, "fat": 5.13, "carbs": 17.95, "fiber": 0},
+    {"fdc_id": 2708346, "data_type": "Survey (FNDDS)", "description": "Idli", "aliases": ["idli", "idly"], "kcal": 128, "protein": 6.36, "fat": 0.35, "carbs": 24.98, "fiber": 5.8},
+    {"fdc_id": 2708347, "data_type": "Survey (FNDDS)", "description": "Dosa, plain", "aliases": ["dosa", "plain dosa"], "kcal": 210, "protein": 5.7, "fat": 4.05, "carbs": 37.04, "fiber": 1.8},
+    {"fdc_id": 2443164, "data_type": "Branded (label data)", "description": "URAD DAL (Deep Foods Inc.)", "aliases": ["urad dal", "urad", "black gram", "black gram dal", "split black gram"], "kcal": 343, "protein": 22.9, "fat": 1.43, "carbs": 60, "fiber": 28.6},
+    {"fdc_id": 1941005, "data_type": "Branded (label data)", "description": "TOOR DAL (SPLIT PIGEON PEAS) (V Patel & Sons Inc)", "aliases": ["toor dal", "toovar dal", "tuvar dal", "arhar dal", "split pigeon peas"], "kcal": 343, "protein": 22.9, "fat": 1.43, "carbs": 62.9, "fiber": 17.1},
+    {"fdc_id": 2072742, "data_type": "Branded (label data)", "description": "MOONG DAL SPLIT MUNG BEANS (LT Foods Americas, Inc.)", "aliases": ["moong dal", "mung dal", "yellow moong dal", "split mung beans"], "kcal": 340, "protein": 24, "fat": 2, "carbs": 62, "fiber": 16},
+    {"fdc_id": 2072744, "data_type": "Branded (label data)", "description": "MASOOR DAL SPLIT RED LENTILS (LT Foods Americas, Inc.)", "aliases": ["masoor dal", "red lentils", "split red lentils", "red lentil"], "kcal": 333, "protein": 25.6, "fat": 2.56, "carbs": 59, "fiber": 10.3},
+    {"fdc_id": 2072741, "data_type": "Branded (label data)", "description": "CHANA DAL SPLIT CHICK PEAS (LT Foods Americas, Inc.)", "aliases": ["chana dal", "split chickpeas", "bengal gram dal"], "kcal": 356, "protein": 20, "fat": 6.67, "carbs": 60, "fiber": 17.8},
+    {"fdc_id": 2164542, "data_type": "Branded (label data)", "description": "JAGGERY GUR (V Patel & Sons Inc)", "aliases": ["jaggery", "gur", "gud"], "kcal": 367, "protein": 0, "fat": 0, "carbs": 88.7, "fiber": 0},
+    {"fdc_id": 2265565, "data_type": "Branded (label data)", "description": "THICK POHA (Deep Foods Inc.)", "aliases": ["poha", "flattened rice", "beaten rice", "rice flakes"], "kcal": 333, "protein": 6.67, "fat": 0, "carbs": 76.7, "fiber": 6.7}
+  ]
+}

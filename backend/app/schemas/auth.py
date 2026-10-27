@@ -4,7 +4,7 @@ auth.py
 Pydantic schemas for authentication and user management.
 """
 
-from typing import Optional
+from typing import List, Optional
 from pydantic import BaseModel, EmailStr
 
 class UserRegister(BaseModel):
@@ -26,6 +26,10 @@ class UserProfileResponse(BaseModel):
     name: str
     email: str
     dietary_preference: str
+    allergies: List[str] = []
+
+class AllergyUpdateRequest(BaseModel):
+    allergies: List[str]
 
 class PreferenceUpdateRequest(BaseModel):
     dietary_preference: str

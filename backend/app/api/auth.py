@@ -40,12 +40,12 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
         return user
 
     user_id_str = decode_access_token(token)
-    if not user_id_str:
+    if not user_id_str or not str(user_id_str).isdigit():
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid authorization token")
     
     user = db.query(User).filter(User.id == int(user_id_str)).first()
     if not user:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User no longer exists")
     return user
 
 @router.post("/register", response_model=TokenResponse)
@@ -72,7 +72,8 @@ def register(user_in: UserRegister, db: Session = Depends(get_db)):
             "id": new_user.id,
             "name": new_user.name,
             "email": new_user.email,
-            "dietary_preference": new_user.dietary_preference
+            "dietary_preference": new_user.dietary_preference,
+            "allergies": []
         }
     }
 
@@ -90,7 +91,8 @@ def login(user_in: UserLogin, db: Session = Depends(get_db)):
             "id": user.id,
             "name": user.name,
             "email": user.email,
-            "dietary_preference": user.dietary_preference
+            "dietary_preference": user.dietary_preference,
+            "allergies": user.allergies or []
         }
     }
 

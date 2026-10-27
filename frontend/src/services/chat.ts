@@ -2,12 +2,13 @@ import { apiClient } from './api';
 import type { ChatSession, Message, DietaryPreference } from '../types';
 
 export const chatService = {
-  async sendMessage(message: string, preference?: DietaryPreference, cuisine?: string, chatId?: string) {
+  async sendMessage(message: string, preference?: DietaryPreference, cuisine?: string, chatId?: string, allergies?: string[]) {
     const res = await apiClient.post('/chat', {
       message,
       preference,
       cuisine,
-      chat_id: chatId
+      chat_id: chatId,
+      allergies,
     });
     return res.data;
   },

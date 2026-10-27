@@ -81,6 +81,10 @@ class RecipeRetrievalService:
         self.df['_name_lower'] = self.df['name'].str.lower().fillna('')
         self.df['_category_lower'] = self.df['tags'].astype(str).str.lower().fillna('') if 'tags' in self.df.columns else self.df['name'].str.lower().fillna('')
         self.df['_cuisine_lower'] = self.df['cuisine'].astype(str).str.lower().fillna('')
+        # Precomputed once so each search is a few vectorised string checks instead of a Python loop
+        self.df['_diet_lower'] = self.df['dietary_attribute'].astype(str).str.lower().str.strip()
+        self.df['_ing_text'] = self.df['ingredients'].apply(
+            lambda v: "|" + "|".join(str(x).lower().strip() for x in v) + "|" if isinstance(v, (list, np.ndarray)) else "")
         self.is_loaded = True
         print(f"Retrieval service initialized with {len(self.df):,} clean recipes.")
 
@@ -144,12 +148,11 @@ class RecipeRetrievalService:
         if self.df is None or len(self.df) == 0:
             return []
 
-        filtered = self.df.copy()
+        filtered = self.df  # filtered below with boolean masks (no full copy of the 229K-row table)
 
         # 1. Strict Dietary Attribute Filter
         pref_str = preference.lower().strip() if preference else "no_preference"
-        # Normalize the column to lowercase for comparison (CSV uses capitalized values)
-        diet_col = filtered['dietary_attribute'].str.lower().str.strip()
+        diet_col = filtered['_diet_lower']
         if pref_str == "vegan":
             filtered = filtered[diet_col == "vegan"]
         elif pref_str == "vegetarian":
@@ -180,19 +183,17 @@ class RecipeRetrievalService:
         query_set = set(clean_query_ings)
 
         if query_set:
-            def score_recipe(recipe_ings):
-                if not isinstance(recipe_ings, (list, np.ndarray)):
-                    return 0
-                r_set = set([str(x).lower().strip() for x in recipe_ings])
-                overlap = 0
-                for q in query_set:
-                    for r in r_set:
-                        if q in r or r in q:
-                            overlap += 1
-                            break
-                return overlap
-
-            filtered['match_score'] = filtered['ingredients'].apply(score_recipe)
+            # One point per query ingredient found in the recipe ("onion" matches "red onion"; a query
+            # like "red onion" also matches a recipe's plain "onion" through its main word).
+            text = filtered['_ing_text']
+            score = pd.Series(0, index=filtered.index)
+            for q in query_set:
+                terms = [q] + [w for w in q.split() if len(w) > 3 and w != q]
+                hit = pd.Series(False, index=filtered.index)
+                for t in terms:
+                    hit |= text.str.contains(t, regex=False)
+                score += hit.astype(int)
+            filtered = filtered.assign(match_score=score)
             # Require AT LEAST 1 matching ingredient
             filtered = filtered[filtered['match_score'] > 0]
             if len(filtered) == 0:
